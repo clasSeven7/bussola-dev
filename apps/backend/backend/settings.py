@@ -11,6 +11,7 @@ ALLOWED_HOSTS = []
 
 APPS = [
     'app',
+    'softdelete',
 ]
 
 INSTALLED_APPS = [
@@ -54,8 +55,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bussola_dev_db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres-admin',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 

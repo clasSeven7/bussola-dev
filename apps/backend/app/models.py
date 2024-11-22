@@ -25,7 +25,13 @@ class Project(BaseModel):
     title = models.CharField(max_length=200)
     description = models.TextField()
     image = models.ImageField(upload_to='project/', null=True, blank=True)
-    technologies = models.JSONField()
+    technologies = models.JSONField(
+        help_text="""Insira um JSON válido. 
+        Exemplo: {
+        "frontend": ["React", "Vue.js"], 
+        "backend": ["Django", "Node.js"]
+        }"""
+    )
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
