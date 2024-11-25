@@ -39,12 +39,17 @@ export default async function ProjetoPage({
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-zinc-950 text-white py-10 mt-10">
+      <div className="min-h-screen bg-zinc-950 text-white py-10 mt-24">
         <div className="max-w-5xl mx-auto px-6">
-          <h1 className="text-3xl font-bold mb-8">{project.title}</h1>
-          <Link href={`projetos/`}>
-            <ClipboardPen className="w-5 h-5 text-zinc-400" />
-          </Link>
+          <div className="flex items-center justify-between mb-8">
+            <h1 className="text-3xl font-bold">{project.title}</h1>
+            <Link href={`/projetos/${params.projetoId}/editar`}>
+              <button className="flex items-center space-x-2 bg-zinc-700 text-white px-4 py-2 rounded-lg hover:bg-zinc-600">
+                <ClipboardPen className="w-5 h-5" />
+                <span>Editar</span>
+              </button>
+            </Link>
+          </div>
           <Image
             src={project.imageUrl}
             alt={project.title}

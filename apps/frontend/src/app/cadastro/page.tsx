@@ -1,5 +1,6 @@
 'use client';
 
+import { Milestone } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -27,7 +28,10 @@ export default function SignUp() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-zinc-950 text-white">
       <div className="bg-zinc-800 p-8 rounded-lg shadow-lg w-full sm:w-96">
-        <h2 className="text-2xl font-semibold mb-6">Cadastro</h2>
+        <h2 className="flex item-center justify-start text-2xl font-semibold mb-6">
+          <Milestone className="w-8 h-8 mr-2" />
+          Cadastro
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label

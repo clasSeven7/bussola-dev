@@ -86,7 +86,7 @@ export default function Portfolio() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-zinc-950 text-white p-8 mt-12">
+      <div className="min-h-screen bg-zinc-950 text-white p-8 mt-24">
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold">Meu Portfólio</h1>
           <p className="text-zinc-400">

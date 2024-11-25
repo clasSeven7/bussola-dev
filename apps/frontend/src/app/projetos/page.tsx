@@ -41,7 +41,7 @@ export default function Projects() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-zinc-950 text-white mt-10">
+      <div className="min-h-screen bg-zinc-950 text-white mt-24">
         <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="flex align-center justify-between p-4">
             <h1 className="text-3xl font-bold mr-10">Meus Projetos</h1>
