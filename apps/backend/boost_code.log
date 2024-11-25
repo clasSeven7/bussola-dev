@@ -1,0 +1,62 @@
+2024-11-24 20:31:03,877 - INFO - Watching for file changes with StatReloader
+2024-11-24 20:33:29,362 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-11-24 20:33:29,760 - INFO - Watching for file changes with StatReloader
+2024-11-24 20:33:50,229 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-11-24 20:33:50,685 - INFO - Watching for file changes with StatReloader
+2024-11-24 20:33:54,399 - WARNING - Not Found: /
+2024-11-24 20:33:54,807 - WARNING - Not Found: /favicon.ico
+2024-11-24 20:34:34,679 - DEBUG - STREAM b'IHDR' 16 13
+2024-11-24 20:34:34,680 - DEBUG - STREAM b'sBIT' 41 4
+2024-11-24 20:34:34,680 - DEBUG - b'sBIT' 41 4 (unknown)
+2024-11-24 20:34:34,680 - DEBUG - STREAM b'tEXt' 57 25
+2024-11-24 20:34:34,681 - DEBUG - STREAM b'tEXt' 94 38
+2024-11-24 20:34:34,681 - DEBUG - STREAM b'IDAT' 144 8192
+2024-11-24 20:34:34,681 - DEBUG - Importing BlpImagePlugin
+2024-11-24 20:34:34,682 - DEBUG - Importing BmpImagePlugin
+2024-11-24 20:34:34,682 - DEBUG - Importing BufrStubImagePlugin
+2024-11-24 20:34:34,683 - DEBUG - Importing CurImagePlugin
+2024-11-24 20:34:34,683 - DEBUG - Importing DcxImagePlugin
+2024-11-24 20:34:34,684 - DEBUG - Importing DdsImagePlugin
+2024-11-24 20:34:34,687 - DEBUG - Importing EpsImagePlugin
+2024-11-24 20:34:34,688 - DEBUG - Importing FitsImagePlugin
+2024-11-24 20:34:34,688 - DEBUG - Importing FliImagePlugin
+2024-11-24 20:34:34,689 - DEBUG - Importing FpxImagePlugin
+2024-11-24 20:34:34,689 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-11-24 20:34:34,689 - DEBUG - Importing FtexImagePlugin
+2024-11-24 20:34:34,689 - DEBUG - Importing GbrImagePlugin
+2024-11-24 20:34:34,690 - DEBUG - Importing GifImagePlugin
+2024-11-24 20:34:34,690 - DEBUG - Importing GribStubImagePlugin
+2024-11-24 20:34:34,690 - DEBUG - Importing Hdf5StubImagePlugin
+2024-11-24 20:34:34,690 - DEBUG - Importing IcnsImagePlugin
+2024-11-24 20:34:34,692 - DEBUG - Importing IcoImagePlugin
+2024-11-24 20:34:34,693 - DEBUG - Importing ImImagePlugin
+2024-11-24 20:34:34,693 - DEBUG - Importing ImtImagePlugin
+2024-11-24 20:34:34,694 - DEBUG - Importing IptcImagePlugin
+2024-11-24 20:34:34,694 - DEBUG - Importing JpegImagePlugin
+2024-11-24 20:34:34,694 - DEBUG - Importing Jpeg2KImagePlugin
+2024-11-24 20:34:34,694 - DEBUG - Importing McIdasImagePlugin
+2024-11-24 20:34:34,695 - DEBUG - Importing MicImagePlugin
+2024-11-24 20:34:34,695 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-11-24 20:34:34,695 - DEBUG - Importing MpegImagePlugin
+2024-11-24 20:34:34,696 - DEBUG - Importing MpoImagePlugin
+2024-11-24 20:34:34,699 - DEBUG - Importing MspImagePlugin
+2024-11-24 20:34:34,699 - DEBUG - Importing PalmImagePlugin
+2024-11-24 20:34:34,700 - DEBUG - Importing PcdImagePlugin
+2024-11-24 20:34:34,701 - DEBUG - Importing PcxImagePlugin
+2024-11-24 20:34:34,701 - DEBUG - Importing PdfImagePlugin
+2024-11-24 20:34:34,705 - DEBUG - Importing PixarImagePlugin
+2024-11-24 20:34:34,705 - DEBUG - Importing PngImagePlugin
+2024-11-24 20:34:34,705 - DEBUG - Importing PpmImagePlugin
+2024-11-24 20:34:34,705 - DEBUG - Importing PsdImagePlugin
+2024-11-24 20:34:34,706 - DEBUG - Importing QoiImagePlugin
+2024-11-24 20:34:34,706 - DEBUG - Importing SgiImagePlugin
+2024-11-24 20:34:34,706 - DEBUG - Importing SpiderImagePlugin
+2024-11-24 20:34:34,707 - DEBUG - Importing SunImagePlugin
+2024-11-24 20:34:34,707 - DEBUG - Importing TgaImagePlugin
+2024-11-24 20:34:34,707 - DEBUG - Importing TiffImagePlugin
+2024-11-24 20:34:34,707 - DEBUG - Importing WebPImagePlugin
+2024-11-24 20:34:34,709 - DEBUG - Importing WmfImagePlugin
+2024-11-24 20:34:34,710 - DEBUG - Importing XbmImagePlugin
+2024-11-24 20:34:34,711 - DEBUG - Importing XpmImagePlugin
+2024-11-24 20:34:34,712 - DEBUG - Importing XVThumbImagePlugin
+2024-11-24 20:36:49,295 - WARNING - Not Found: /favicon.ico
