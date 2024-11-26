@@ -60,3 +60,55 @@
 2024-11-24 20:34:34,711 - DEBUG - Importing XpmImagePlugin
 2024-11-24 20:34:34,712 - DEBUG - Importing XVThumbImagePlugin
 2024-11-24 20:36:49,295 - WARNING - Not Found: /favicon.ico
+2024-11-26 11:19:32,007 - INFO - Watching for file changes with StatReloader
+2024-11-26 11:22:56,657 - INFO - Watching for file changes with StatReloader
+2024-11-26 11:23:03,692 - WARNING - Not Found: /
+2024-11-26 11:23:04,138 - WARNING - Not Found: /favicon.ico
+2024-11-26 11:23:39,130 - DEBUG - Importing BlpImagePlugin
+2024-11-26 11:23:39,132 - DEBUG - Importing BmpImagePlugin
+2024-11-26 11:23:39,132 - DEBUG - Importing BufrStubImagePlugin
+2024-11-26 11:23:39,133 - DEBUG - Importing CurImagePlugin
+2024-11-26 11:23:39,133 - DEBUG - Importing DcxImagePlugin
+2024-11-26 11:23:39,134 - DEBUG - Importing DdsImagePlugin
+2024-11-26 11:23:39,140 - DEBUG - Importing EpsImagePlugin
+2024-11-26 11:23:39,142 - DEBUG - Importing FitsImagePlugin
+2024-11-26 11:23:39,144 - DEBUG - Importing FliImagePlugin
+2024-11-26 11:23:39,145 - DEBUG - Importing FpxImagePlugin
+2024-11-26 11:23:39,146 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-11-26 11:23:39,146 - DEBUG - Importing FtexImagePlugin
+2024-11-26 11:23:39,147 - DEBUG - Importing GbrImagePlugin
+2024-11-26 11:23:39,148 - DEBUG - Importing GifImagePlugin
+2024-11-26 11:23:39,148 - DEBUG - Importing GribStubImagePlugin
+2024-11-26 11:23:39,149 - DEBUG - Importing Hdf5StubImagePlugin
+2024-11-26 11:23:39,150 - DEBUG - Importing IcnsImagePlugin
+2024-11-26 11:23:39,153 - DEBUG - Importing IcoImagePlugin
+2024-11-26 11:23:39,156 - DEBUG - Importing ImImagePlugin
+2024-11-26 11:23:39,158 - DEBUG - Importing ImtImagePlugin
+2024-11-26 11:23:39,160 - DEBUG - Importing IptcImagePlugin
+2024-11-26 11:23:39,161 - DEBUG - Importing JpegImagePlugin
+2024-11-26 11:23:39,161 - DEBUG - Importing Jpeg2KImagePlugin
+2024-11-26 11:23:39,161 - DEBUG - Importing McIdasImagePlugin
+2024-11-26 11:23:39,162 - DEBUG - Importing MicImagePlugin
+2024-11-26 11:23:39,163 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-11-26 11:23:39,164 - DEBUG - Importing MpegImagePlugin
+2024-11-26 11:23:39,164 - DEBUG - Importing MpoImagePlugin
+2024-11-26 11:23:39,175 - DEBUG - Importing MspImagePlugin
+2024-11-26 11:23:39,177 - DEBUG - Importing PalmImagePlugin
+2024-11-26 11:23:39,179 - DEBUG - Importing PcdImagePlugin
+2024-11-26 11:23:39,180 - DEBUG - Importing PcxImagePlugin
+2024-11-26 11:23:39,180 - DEBUG - Importing PdfImagePlugin
+2024-11-26 11:23:39,196 - DEBUG - Importing PixarImagePlugin
+2024-11-26 11:23:39,197 - DEBUG - Importing PngImagePlugin
+2024-11-26 11:23:39,197 - DEBUG - Importing PpmImagePlugin
+2024-11-26 11:23:39,198 - DEBUG - Importing PsdImagePlugin
+2024-11-26 11:23:39,199 - DEBUG - Importing QoiImagePlugin
+2024-11-26 11:23:39,200 - DEBUG - Importing SgiImagePlugin
+2024-11-26 11:23:39,202 - DEBUG - Importing SpiderImagePlugin
+2024-11-26 11:23:39,203 - DEBUG - Importing SunImagePlugin
+2024-11-26 11:23:39,205 - DEBUG - Importing TgaImagePlugin
+2024-11-26 11:23:39,207 - DEBUG - Importing TiffImagePlugin
+2024-11-26 11:23:39,207 - DEBUG - Importing WebPImagePlugin
+2024-11-26 11:23:39,213 - DEBUG - Importing WmfImagePlugin
+2024-11-26 11:23:39,215 - DEBUG - Importing XbmImagePlugin
+2024-11-26 11:23:39,217 - DEBUG - Importing XpmImagePlugin
+2024-11-26 11:23:39,219 - DEBUG - Importing XVThumbImagePlugin
