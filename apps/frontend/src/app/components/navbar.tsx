@@ -1,6 +1,6 @@
 'use client';
 
-import { File, Folder, House } from 'lucide-react';
+import { File, Folder, House, LayoutDashboard } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SearchCommand } from './search';
@@ -43,6 +43,13 @@ export default function Navbar() {
             >
               <File width={18} className="mr-1" aria-hidden="true" />
               Portifolio
+            </Link>
+            <Link
+              href="dashboard/"
+              className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
+            >
+              <LayoutDashboard width={18} className="text-zinc-200 mr-1" />
+              Dashboard
             </Link>
           </div>
 
