@@ -13,7 +13,7 @@ export default function Home() {
       description: 'Rede social para desenvolvedores e recrutadores.',
       likes: 125,
       comments: 20,
-      image: '/images/bussola-dev.png', // Exemplo de imagem (substitua pela sua)
+      image: '/image.png', // Exemplo de imagem (substitua pela sua)
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function Home() {
       description: 'Aplicativo para cuidar de idosos e promover bem-estar.',
       likes: 98,
       comments: 15,
-      image: '/images/take-care.png',
+      image: '/image.png',
     },
     // Adicione mais projetos aqui
   ]);
