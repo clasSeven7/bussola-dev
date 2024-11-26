@@ -6,7 +6,6 @@ export default function Dashboard() {
     <>
       <Navbar />
       <div className="min-h-screen bg-zinc-950 text-zinc-200 mt-24">
-        {/* Header */}
         <header className="bg-zinc-900 py-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-2xl font-bold text-white">
@@ -15,7 +14,6 @@ export default function Dashboard() {
           </div>
         </header>
 
-        {/* Dashboard Section */}
         <section id="dashboard" className="py-8">
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-6">Resumo</h2>
