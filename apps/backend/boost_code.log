@@ -402,3 +402,6 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-11-28 19:24:20,555 - WARNING - Unauthorized: /api/projects/
 2024-11-28 19:25:20,874 - WARNING - Not Found: /api/projects/projetos/
 2024-11-28 19:25:20,940 - WARNING - Not Found: /api/projects/projetos/
+2024-11-28 20:26:40,640 - INFO - Watching for file changes with StatReloader
+2024-11-28 20:26:55,040 - WARNING - Unauthorized: /api/projects/
+2024-11-28 20:26:55,044 - WARNING - Unauthorized: /api/projects/

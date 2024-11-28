@@ -1,6 +1,7 @@
 'use client'; // Diretiva para tornar o componente um Client Component
 
 import Navbar from '@/app/components/navbar';
+import { Button } from '@/components/ui/button';
 import api from '@/services/api'; // Importando a instância da API configurada
 import { ClipboardPen, FileText, Github } from 'lucide-react';
 import Image from 'next/image';
@@ -126,11 +127,13 @@ export default function ProjetoPage({
             )}
           </div>
         </div>
-        <Link href="/projetos" className="bg-red-700">
-          <div className="block text-center text-zinc-400 mt-8 hover:text-white">
-            Voltar
-          </div>
-        </Link>
+        <div className="flex justify-center items-center text-center">
+          <Button className="flex justify-center items-center pt-8 pb-8 pr-22 pl-22">
+            <Link href="/projetos" className="text-base">
+              Voltar
+            </Link>
+          </Button>
+        </div>
       </div>
     </>
   );
