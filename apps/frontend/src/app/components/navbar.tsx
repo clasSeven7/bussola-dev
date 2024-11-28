@@ -10,7 +10,7 @@ export default function Navbar() {
   const router = useRouter();
 
   const handleLogout = () => {
-    // Remover o token do localStorage
+    // Remover o token e o nome do usuário do localStorage
     localStorage.removeItem('token');
     // Redirecionar para a página de login
     router.push('/login');

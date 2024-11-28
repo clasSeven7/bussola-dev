@@ -359,3 +359,46 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-11-28 13:21:33,092 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
 2024-11-28 13:21:33,480 - INFO - Watching for file changes with StatReloader
 2024-11-28 13:22:01,653 - WARNING - Unauthorized: /api/projects/
+2024-11-28 18:08:13,588 - WARNING - Unauthorized: /api/token/
+2024-11-28 18:32:10,734 - WARNING - Unauthorized: /api/projects/
+2024-11-28 18:42:03,311 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:42:18,172 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:42:19,373 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:44:14,174 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:05,037 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:24,176 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:37,319 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:38,582 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:39,153 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:47:55,483 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:48:44,463 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:49:56,723 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:49:56,753 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:59:47,710 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 18:59:57,221 - WARNING - Unauthorized: /api/projects/2/
+2024-11-28 19:00:01,391 - WARNING - Unauthorized: /api/projects/1/
+2024-11-28 19:00:51,222 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:01:37,401 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:07,693 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:13,121 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:14,346 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:45,869 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:45,887 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:49,632 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:02:50,781 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:03:04,585 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:03:04,601 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:03:06,185 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:03:06,187 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:03:09,788 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:05:04,952 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:06:01,141 - WARNING - Not Found: /projects
+2024-11-28 19:06:06,924 - WARNING - Not Found: /projects/3
+2024-11-28 19:06:20,657 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:06:39,971 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:07:16,923 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:07:33,590 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:09:23,116 - WARNING - Unauthorized: /api/projects/3/
+2024-11-28 19:24:20,555 - WARNING - Unauthorized: /api/projects/
+2024-11-28 19:25:20,874 - WARNING - Not Found: /api/projects/projetos/
+2024-11-28 19:25:20,940 - WARNING - Not Found: /api/projects/projetos/
