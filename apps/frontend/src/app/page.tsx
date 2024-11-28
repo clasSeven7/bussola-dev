@@ -1,11 +1,13 @@
 'use client';
 
+import useAuth from '@/hooks/useAuth';
 import { Heart, MessageSquare, Share2 } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import Navbar from './components/navbar';
 
 export default function Home() {
+  useAuth(); // Verifica se o usuário está autenticado ao carregar a página
   const [feedProjects, setFeedProjects] = useState([
     {
       id: 1,

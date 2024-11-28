@@ -107,9 +107,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
     "DEFAULT_FILTER_BACKENDS": ("django_filters.rest_framework.DjangoFilterBackend",),
     "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
@@ -118,14 +121,13 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    # Duração do token de acesso
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=1440),
-    # Duração do token de atualização
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=30),
-    # Rotacionar tokens de atualização
+    # Ajuste conforme necessário
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),     # Permite renovar o token
+    # Gera um novo refresh ao usá-lo
     'ROTATE_REFRESH_TOKENS': True,
-    # Colocar tokens de atualização na lista negra após a rotação
-    'BLACKLIST_AFTER_ROTATION': True,
+    'BLACKLIST_AFTER_ROTATION': True,               # Blacklist o refresh antigo
+    'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
 LOGGING = {

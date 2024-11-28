@@ -8,16 +8,41 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination';
+import api from '@/services/api'; // Importar API configurada
 import { CirclePlus, Eye, FileText, Github } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import { projects } from '../../lib/dataProject';
+// import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import Navbar from '../components/navbar';
 
 export default function Projects() {
+  interface Project {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    technologies: { [key: string]: string[] };
+  }
+
+  const [projects, setProjects] = useState<Project[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
+  // const router = useRouter();
+
+  useEffect(() => {
+    api
+      .get('/projects/')
+      .then((response) => setProjects(response.data))
+      .catch((error) => {
+        console.error('Erro ao buscar projetos:', error);
+        if (error.response?.status === 401) {
+          alert('Sessão expirada. Faça login novamente.');
+          localStorage.removeItem('token');
+          // router.push('/login'); // Redireciona para a página de login
+        }
+      });
+  }, []);
 
   // Calcule os projetos visíveis com base na página atual
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -62,7 +87,7 @@ export default function Projects() {
                 className="bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg hover:bg-zinc-700 transition"
               >
                 <Image
-                  src={project.imageUrl}
+                  src={project.image}
                   alt={project.title}
                   width={128}
                   height={128}

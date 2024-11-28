@@ -1,11 +1,21 @@
 'use client';
 
-import { File, Folder, House, LayoutDashboard } from 'lucide-react';
+import { File, Folder, House, LayoutDashboard, LogOut } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { SearchCommand } from './search';
 
 export default function Navbar() {
+  const router = useRouter();
+
+  const handleLogout = () => {
+    // Remover o token do localStorage
+    localStorage.removeItem('token');
+    // Redirecionar para a página de login
+    router.push('/login');
+  };
+
   return (
     <nav className="w-full fixed top-0 left-0 py-5 z-10 border-b border-zinc-800 bg-zinc-950">
       <div className="max-w-[1500px] mx-auto px-5">
@@ -69,6 +79,15 @@ export default function Navbar() {
                 className="rounded-full border-2 border-zinc-800"
               />
             </Link>
+
+            {/* Botão de Logout */}
+            <button
+              onClick={handleLogout}
+              className="ml-5 text-zinc-200 flex items-center justify-center text-sm text-center"
+            >
+              <LogOut width={18} className="mr-1" />
+              Sair
+            </button>
           </div>
         </div>
       </div>

@@ -347,3 +347,15 @@ Traceback (most recent call last):
 django.db.utils.IntegrityError: duplicate key value violates unique constraint "app_user_email_key"
 DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 
+2024-11-28 12:12:54,767 - WARNING - Unauthorized: /api/projects/
+2024-11-28 12:15:45,583 - WARNING - Unauthorized: /api/projects/
+2024-11-28 12:18:32,603 - WARNING - Unauthorized: /api/projects/
+2024-11-28 12:18:38,602 - WARNING - Unauthorized: /api/projects/
+2024-11-28 12:19:51,149 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-11-28 12:19:51,661 - INFO - Watching for file changes with StatReloader
+2024-11-28 13:19:11,914 - INFO - Watching for file changes with StatReloader
+2024-11-28 13:19:22,782 - WARNING - Unauthorized: /api/projects/
+2024-11-28 13:19:22,787 - WARNING - Unauthorized: /api/projects/
+2024-11-28 13:21:33,092 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-11-28 13:21:33,480 - INFO - Watching for file changes with StatReloader
+2024-11-28 13:22:01,653 - WARNING - Unauthorized: /api/projects/
