@@ -112,3 +112,238 @@
 2024-11-26 11:23:39,215 - DEBUG - Importing XbmImagePlugin
 2024-11-26 11:23:39,217 - DEBUG - Importing XpmImagePlugin
 2024-11-26 11:23:39,219 - DEBUG - Importing XVThumbImagePlugin
+2024-11-28 11:32:07,900 - INFO - Watching for file changes with StatReloader
+2024-11-28 11:32:18,237 - WARNING - Not Found: /
+2024-11-28 11:32:18,906 - WARNING - Not Found: /favicon.ico
+2024-11-28 11:32:23,128 - WARNING - Not Found: /api/post
+2024-11-28 11:32:34,188 - WARNING - Unauthorized: /api/users/
+2024-11-28 11:33:37,704 - WARNING - Unauthorized: /api/projects/
+2024-11-28 11:34:36,808 - WARNING - Unauthorized: /api/users/
+2024-11-28 11:54:35,584 - DEBUG - Importing BlpImagePlugin
+2024-11-28 11:54:35,586 - DEBUG - Importing BmpImagePlugin
+2024-11-28 11:54:35,586 - DEBUG - Importing BufrStubImagePlugin
+2024-11-28 11:54:35,587 - DEBUG - Importing CurImagePlugin
+2024-11-28 11:54:35,588 - DEBUG - Importing DcxImagePlugin
+2024-11-28 11:54:35,589 - DEBUG - Importing DdsImagePlugin
+2024-11-28 11:54:35,598 - DEBUG - Importing EpsImagePlugin
+2024-11-28 11:54:35,600 - DEBUG - Importing FitsImagePlugin
+2024-11-28 11:54:35,601 - DEBUG - Importing FliImagePlugin
+2024-11-28 11:54:35,602 - DEBUG - Importing FpxImagePlugin
+2024-11-28 11:54:35,603 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-11-28 11:54:35,603 - DEBUG - Importing FtexImagePlugin
+2024-11-28 11:54:35,604 - DEBUG - Importing GbrImagePlugin
+2024-11-28 11:54:35,604 - DEBUG - Importing GifImagePlugin
+2024-11-28 11:54:35,604 - DEBUG - Importing GribStubImagePlugin
+2024-11-28 11:54:35,606 - DEBUG - Importing Hdf5StubImagePlugin
+2024-11-28 11:54:35,607 - DEBUG - Importing IcnsImagePlugin
+2024-11-28 11:54:35,611 - DEBUG - Importing IcoImagePlugin
+2024-11-28 11:54:35,614 - DEBUG - Importing ImImagePlugin
+2024-11-28 11:54:35,617 - DEBUG - Importing ImtImagePlugin
+2024-11-28 11:54:35,618 - DEBUG - Importing IptcImagePlugin
+2024-11-28 11:54:35,619 - DEBUG - Importing JpegImagePlugin
+2024-11-28 11:54:35,620 - DEBUG - Importing Jpeg2KImagePlugin
+2024-11-28 11:54:35,620 - DEBUG - Importing McIdasImagePlugin
+2024-11-28 11:54:35,620 - DEBUG - Importing MicImagePlugin
+2024-11-28 11:54:35,622 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-11-28 11:54:35,622 - DEBUG - Importing MpegImagePlugin
+2024-11-28 11:54:35,623 - DEBUG - Importing MpoImagePlugin
+2024-11-28 11:54:35,635 - DEBUG - Importing MspImagePlugin
+2024-11-28 11:54:35,637 - DEBUG - Importing PalmImagePlugin
+2024-11-28 11:54:35,639 - DEBUG - Importing PcdImagePlugin
+2024-11-28 11:54:35,641 - DEBUG - Importing PcxImagePlugin
+2024-11-28 11:54:35,641 - DEBUG - Importing PdfImagePlugin
+2024-11-28 11:54:35,655 - DEBUG - Importing PixarImagePlugin
+2024-11-28 11:54:35,656 - DEBUG - Importing PngImagePlugin
+2024-11-28 11:54:35,657 - DEBUG - Importing PpmImagePlugin
+2024-11-28 11:54:35,657 - DEBUG - Importing PsdImagePlugin
+2024-11-28 11:54:35,658 - DEBUG - Importing QoiImagePlugin
+2024-11-28 11:54:35,659 - DEBUG - Importing SgiImagePlugin
+2024-11-28 11:54:35,660 - DEBUG - Importing SpiderImagePlugin
+2024-11-28 11:54:35,661 - DEBUG - Importing SunImagePlugin
+2024-11-28 11:54:35,661 - DEBUG - Importing TgaImagePlugin
+2024-11-28 11:54:35,662 - DEBUG - Importing TiffImagePlugin
+2024-11-28 11:54:35,662 - DEBUG - Importing WebPImagePlugin
+2024-11-28 11:54:35,666 - DEBUG - Importing WmfImagePlugin
+2024-11-28 11:54:35,666 - DEBUG - Importing XbmImagePlugin
+2024-11-28 11:54:35,668 - DEBUG - Importing XpmImagePlugin
+2024-11-28 11:54:35,668 - DEBUG - Importing XVThumbImagePlugin
+2024-11-28 11:55:17,408 - ERROR - Internal Server Error: /admin/app/user/add/
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "app_user_email_key"
+DETAIL:  Key (email)=(saulo@gmail.com) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1871, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1294, in save_model
+    obj.save()
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "app_user_email_key"
+DETAIL:  Key (email)=(saulo@gmail.com) already exists.
+
+2024-11-28 11:55:58,416 - ERROR - Internal Server Error: /admin/app/user/add/
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "app_user_email_key"
+DETAIL:  Key (email)=(saulo@gmail.com) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1871, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1294, in save_model
+    obj.save()
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "app_user_email_key"
+DETAIL:  Key (email)=(saulo@gmail.com) already exists.
+
