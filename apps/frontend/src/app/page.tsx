@@ -25,7 +25,7 @@ export default function Home() {
                 <ProjectCard
                   key={project.id}
                   project={project}
-                  onLike={handleLike} // Passa a função de curtir
+                  onLike={handleLike}
                 />
               ))}
             </div>
