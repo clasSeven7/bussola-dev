@@ -39,7 +39,7 @@
 - **React:** Biblioteca JavaScript para construção de interfaces de usuário.
 - **TypeScript:** Superset JavaScript que adiciona tipagem estática ao código.
 - **Shadcn/ui** Biblioteca de componentes React para construção de interfaces de usuário.
-- **Lucida.js** Biblioteca JavaScript para criação de gráficos interativos e icones
+- **Lucida.js** Biblioteca JavaScript para criação de gráficos interativos e ícones
 
 ### 🖥 Endpoints da API
 
@@ -65,25 +65,16 @@ curl -X POST http://127.0.0.1:8000/api/links/ -H "Content-Type: application/json
 curl http://127.0.0.1:8000/api/links/
 ```
 
-### 🔍 Testes
-
 A aplicação inclui uma suíte de testes para verificar a integridade das funcionalidades.
-
-**Dependências para Testes:**
 
 - Django
 - Django REST Framework
 - Django REST Framework Simple JWT (para autenticação)
 
-#### Descrição dos Testes
-
-A classe `PostAPITestCase` realiza os seguintes testes:
-
-- **Criação de Post:** Verifica se um post pode ser criado por um usuário autenticado.
-- **Recuperação de Post:** Testa se um post existente pode ser recuperado.
-- **Atualização de Post:** Valida se um post pode ser atualizado.
-- **Exclusão de Post:** Confirma que um post pode ser excluído.
-- **Criação de Post sem Autenticação:** Garante que a criação de um post é negada sem autenticação.
+- **Criação:** Verifica se um post pode ser criado por um usuário autenticado.
+- **Recuperação:** Testa se um post existente pode ser recuperado.
+- **Atualização:** Valida se um post pode ser atualizado.
+- **Exclusão:** Confirma que um post pode ser excluído.
 
 #### Executando Testes
 
