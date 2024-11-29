@@ -405,3 +405,30 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-11-28 20:26:40,640 - INFO - Watching for file changes with StatReloader
 2024-11-28 20:26:55,040 - WARNING - Unauthorized: /api/projects/
 2024-11-28 20:26:55,044 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:43:20,348 - INFO - Watching for file changes with StatReloader
+2024-11-29 18:43:32,134 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:43:32,178 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:50:47,137 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:50:47,141 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:53:44,426 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:53:44,430 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:53:44,434 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:53:44,478 - WARNING - Unauthorized: /api/projects/
+2024-11-29 18:55:16,961 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:55:17,619 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:55:17,777 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:57:30,144 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:57:30,705 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:57:30,870 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 18:57:31,022 - WARNING - Not Found: /api/projects/3/like
+2024-11-29 19:05:25,971 - WARNING - Not Found: /api/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTA3MjYwLCJpYXQiOjE3MzI5MDYzNjAsImp0aSI6ImJhM2VjMjY0YzkzMTRmYTk4MDA2NGMzODA4YTFmMzc0IiwidXNlcl9pZCI6MX0.mkUbpBbZtcAa8y7IaQlL5R0fDs7H0tfsRuk_PJvv064
+2024-11-29 19:05:26,018 - WARNING - Not Found: /api/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTA3MjYwLCJpYXQiOjE3MzI5MDYzNjAsImp0aSI6ImJhM2VjMjY0YzkzMTRmYTk4MDA2NGMzODA4YTFmMzc0IiwidXNlcl9pZCI6MX0.mkUbpBbZtcAa8y7IaQlL5R0fDs7H0tfsRuk_PJvv064
+2024-11-29 19:05:31,790 - WARNING - Not Found: /api/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTA3MjYwLCJpYXQiOjE3MzI5MDYzNjAsImp0aSI6ImJhM2VjMjY0YzkzMTRmYTk4MDA2NGMzODA4YTFmMzc0IiwidXNlcl9pZCI6MX0.mkUbpBbZtcAa8y7IaQlL5R0fDs7H0tfsRuk_PJvv064
+2024-11-29 19:05:31,795 - WARNING - Not Found: /api/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzMyOTA3MjYwLCJpYXQiOjE3MzI5MDYzNjAsImp0aSI6ImJhM2VjMjY0YzkzMTRmYTk4MDA2NGMzODA4YTFmMzc0IiwidXNlcl9pZCI6MX0.mkUbpBbZtcAa8y7IaQlL5R0fDs7H0tfsRuk_PJvv064
+2024-11-29 19:13:31,482 - WARNING - Unauthorized: /api/projects/
+2024-11-29 19:13:31,489 - WARNING - Unauthorized: /api/projects/
+2024-11-29 19:14:33,011 - WARNING - Unauthorized: /api/projects/
+2024-11-29 19:14:33,358 - WARNING - Not Found: /favicon.ico
+2024-11-29 19:14:50,128 - WARNING - Method Not Allowed: /api/token/
+2024-11-29 19:29:48,582 - WARNING - Unauthorized: /api/projects/
+2024-11-29 19:29:48,586 - WARNING - Unauthorized: /api/projects/
