@@ -1,7 +1,6 @@
 'use client';
 
 import { CirclePlus, Folder, Trash } from 'lucide-react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Navbar from '../../components/navbar';
@@ -17,20 +16,6 @@ export default function CreateProject() {
     { category: '', techs: [''] },
   ]);
 
-  // Função para adicionar nova tecnologia
-  const addTechnology = (index: number) => {
-    const newTechnologies = [...technologies];
-    newTechnologies[index].techs.push('');
-    setTechnologies(newTechnologies);
-  };
-
-  // Função para remover tecnologia
-  const removeTechnology = (index: number, techIndex: number) => {
-    const newTechnologies = [...technologies];
-    newTechnologies[index].techs.splice(techIndex, 1);
-    setTechnologies(newTechnologies);
-  };
-
   // Função para adicionar nova categoria de tecnologias
   const addCategory = () => {
     setTechnologies([...technologies, { category: '', techs: [''] }]);
@@ -43,14 +28,37 @@ export default function CreateProject() {
     setTechnologies(newTechnologies);
   };
 
-  // Função para salvar o projeto (simulação de envio)
-  const handleSave = (e: React.FormEvent) => {
+  // Função para salvar o projeto no banco de dados
+  const handleSave = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Aqui você pode fazer o envio dos dados para a API ou banco de dados
+    const projectData = {
+      title,
+      description,
+      image_url: imageUrl,
+      technologies,
+    };
 
-    // Após salvar, redireciona para a página de projetos
-    router.push('/projetos');
+    // Envio para a API do backend Django
+    try {
+      const response = await fetch('http://localhost:8000/api/projects/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(projectData),
+      });
+
+      if (response.ok) {
+        // Redireciona após sucesso
+        router.push('/projetos');
+      } else {
+        // Handle error
+        console.error('Erro ao salvar o projeto');
+      }
+    } catch (error) {
+      console.error('Erro de conexão:', error);
+    }
   };
 
   return (
@@ -109,7 +117,7 @@ export default function CreateProject() {
                 value={imageUrl}
                 onChange={(e) => setImageUrl(e.target.value)}
                 className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
-                required
+                // required
               />
             </div>
 
@@ -172,14 +180,6 @@ export default function CreateProject() {
                       </button>
                     </div>
                   ))}
-                  <button
-                    type="button"
-                    onClick={() => addTechnology(index)}
-                    className="flex item-center mt-2 text-zinc-400 hover:text-white"
-                  >
-                    <CirclePlus className="mr-2" />
-                    Adicionar Tecnologia
-                  </button>
                 </div>
               ))}
             </div>
@@ -191,12 +191,6 @@ export default function CreateProject() {
               >
                 Salvar
               </button>
-              <Link
-                href="/projetos"
-                className="bg-red-500 text-white px-6 py-3 rounded-md hover:bg-red-400"
-              >
-                Cancelar
-              </Link>
             </div>
           </form>
         </div>

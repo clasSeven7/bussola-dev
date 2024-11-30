@@ -432,3 +432,21 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-11-29 19:14:50,128 - WARNING - Method Not Allowed: /api/token/
 2024-11-29 19:29:48,582 - WARNING - Unauthorized: /api/projects/
 2024-11-29 19:29:48,586 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:03:47,925 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:04:34,072 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:04:34,075 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:04:40,762 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:04:40,766 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:05:14,224 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:06:36,909 - WARNING - Unauthorized: /api/projects/
+2024-11-29 20:07:09,448 - WARNING - Not Found: /favicon.ico
+2024-11-29 20:13:36,319 - WARNING - Not Found: /api/projetos/
+2024-11-29 22:13:38,070 - INFO - Watching for file changes with StatReloader
+2024-11-29 22:13:44,820 - WARNING - Unauthorized: /api/projects/
+2024-11-29 22:13:44,869 - WARNING - Unauthorized: /api/projects/
+2024-11-29 22:14:30,523 - WARNING - Not Found: /api/projects/projetos/
+2024-11-29 22:14:30,578 - WARNING - Not Found: /api/projects/projetos/
+2024-11-29 22:17:45,944 - WARNING - Not Found: /api/projects/projetos/
+2024-11-29 22:17:45,969 - WARNING - Not Found: /api/projects/projetos/
+2024-11-29 22:18:41,328 - WARNING - Not Found: /api/projects/projetos/
+2024-11-29 22:18:41,357 - WARNING - Not Found: /api/projects/projetos/
