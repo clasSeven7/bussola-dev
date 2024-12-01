@@ -487,3 +487,7 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-12-01 14:16:57,040 - WARNING - Unauthorized: /api/users/
 2024-12-01 14:24:39,576 - WARNING - Unauthorized: /api/users/
 2024-12-01 14:24:49,479 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:38:56,810 - WARNING - Unauthorized: /api/projects/
+2024-12-01 14:38:56,827 - WARNING - Unauthorized: /api/projects/
+2024-12-01 14:38:56,841 - WARNING - Unauthorized: /api/projects/
+2024-12-01 14:38:56,887 - WARNING - Unauthorized: /api/projects/
