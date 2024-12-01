@@ -491,3 +491,22 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-12-01 14:38:56,827 - WARNING - Unauthorized: /api/projects/
 2024-12-01 14:38:56,841 - WARNING - Unauthorized: /api/projects/
 2024-12-01 14:38:56,887 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:15:56,748 - INFO - Watching for file changes with StatReloader
+2024-12-01 23:16:06,158 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:16:06,177 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:16:22,480 - WARNING - Unauthorized: /api/users/
+2024-12-01 23:16:22,490 - WARNING - Unauthorized: /api/users/
+2024-12-01 23:20:49,693 - WARNING - Unauthorized: /api/users/
+2024-12-01 23:20:49,707 - WARNING - Unauthorized: /api/users/
+2024-12-01 23:22:11,592 - WARNING - Not Found: /api/projects/projetos/
+2024-12-01 23:22:11,659 - WARNING - Not Found: /api/projects/projetos/
+2024-12-01 23:25:01,766 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:26:10,063 - WARNING - Not Found: /api/projects/projetos/
+2024-12-01 23:30:10,668 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:34:08,383 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:36:54,021 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:36:54,038 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:36:54,521 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:36:54,531 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:37:42,880 - WARNING - Unauthorized: /api/projects/
+2024-12-01 23:37:42,924 - WARNING - Bad Request: /api/projects/

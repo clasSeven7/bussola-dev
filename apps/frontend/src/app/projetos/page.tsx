@@ -41,7 +41,6 @@ export default function Projects() {
       });
   }, []);
 
-  // Calcule os projetos visíveis com base na página atual
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentProjects = projects.slice(indexOfFirstItem, indexOfLastItem);

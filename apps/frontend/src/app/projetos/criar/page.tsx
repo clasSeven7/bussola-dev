@@ -1,5 +1,6 @@
 'use client';
 
+import api from '@/services/api';
 import { Folder } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
@@ -16,22 +17,18 @@ export default function CreateProject() {
   const [user, setUser] = useState('');
   const [users, setUsers] = useState<any[]>([]);
 
-  // Busca os usuários no banco de dados ao montar o componente
   useEffect(() => {
-    fetch('http://localhost:8000/api/users/') // Altere para a URL correta da sua API
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Usuários recebidos:', data);
-        if (Array.isArray(data)) {
-          setUsers(data);
-        } else {
-          console.error('Resposta inesperada da API:', data);
+    api
+      .get('/users/')
+      .then((response) => setUsers(response.data.results))
+      .catch((error) => {
+        if (error.response?.status === 401) {
+          alert('Sessão expirada. Faça login novamente.');
+          localStorage.removeItem('token');
         }
-      })
-      .catch((error) => console.error('Erro ao buscar usuários:', error));
+      });
   }, []);
 
-  // Função para salvar o projeto no banco de dados
   const handleSave = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -40,29 +37,26 @@ export default function CreateProject() {
     formData.append('description', description);
 
     if (image) {
-      formData.append('image', image); // Envia o arquivo de imagem
+      formData.append('image', image);
     }
 
-    // Verifique se o campo tecnologias contém um formato JSON válido
     try {
       const techData = JSON.parse(technologies);
-      formData.append('technologies', JSON.stringify(techData)); // Envia tecnologias como JSON
+      formData.append('technologies', JSON.stringify(techData));
     } catch (error) {
       console.error('Erro ao processar tecnologias:', error);
-      return; // Impede o envio se o JSON estiver inválido
+      return;
     }
+    formData.append('users', JSON.stringify([user]));
 
-    formData.append('users', JSON.stringify([user])); // Envia o usuário selecionado como array
-
-    // Envio para a API do backend Django
     try {
+      api.post('/projects/', formData);
       const response = await fetch('http://localhost:8000/api/projects/', {
         method: 'POST',
-        body: formData, // Usando FormData para envio de arquivos
+        body: formData,
       });
 
       if (response.ok) {
-        // Redireciona após sucesso
         router.push('/projetos');
       } else {
         console.error('Erro ao salvar o projeto');
