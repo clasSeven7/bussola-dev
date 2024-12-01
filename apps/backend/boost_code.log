@@ -450,3 +450,40 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-11-29 22:17:45,969 - WARNING - Not Found: /api/projects/projetos/
 2024-11-29 22:18:41,328 - WARNING - Not Found: /api/projects/projetos/
 2024-11-29 22:18:41,357 - WARNING - Not Found: /api/projects/projetos/
+2024-12-01 13:16:29,256 - INFO - Watching for file changes with StatReloader
+2024-12-01 13:17:31,748 - WARNING - Unauthorized: /api/projects/
+2024-12-01 13:17:31,800 - WARNING - Unauthorized: /api/projects/
+2024-12-01 13:32:15,363 - WARNING - Not Found: /favicon.ico
+2024-12-01 13:50:04,811 - WARNING - Unauthorized: /api/projects/
+2024-12-01 13:50:17,089 - WARNING - Unauthorized: /api/projects/
+2024-12-01 13:50:17,093 - WARNING - Unauthorized: /api/projects/
+2024-12-01 13:53:32,241 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:54:09,136 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:54:09,142 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:54:09,870 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:54:15,413 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:55:05,875 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:55:48,192 - WARNING - Unauthorized: /api/users/
+2024-12-01 13:59:08,302 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:00:10,511 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:03:08,454 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:03:14,858 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:03:20,912 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:03:24,494 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:03:24,498 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:05:19,692 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:07:04,320 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:07:28,833 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:07:33,913 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:08:23,637 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:13:07,583 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:13:13,132 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:13:26,314 - WARNING - Unauthorized: /api/projects/
+2024-12-01 14:13:26,319 - WARNING - Unauthorized: /api/projects/
+2024-12-01 14:13:29,850 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:13:37,992 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:13:38,007 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:15:12,228 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:16:57,040 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:24:39,576 - WARNING - Unauthorized: /api/users/
+2024-12-01 14:24:49,479 - WARNING - Unauthorized: /api/users/
