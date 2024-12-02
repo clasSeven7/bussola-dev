@@ -129,7 +129,7 @@ export default function ProjetoPage({
         </div>
         <div className="flex justify-center items-center text-center">
           <Button className="flex justify-center items-center pt-8 pb-8 pr-22 pl-22">
-            <Link href="/projetos" className="text-base">
+            <Link href="/projetos/" className="text-base">
               Voltar
             </Link>
           </Button>

@@ -48,21 +48,21 @@ export default function Navbar() {
               Início
             </Link>
             <Link
-              href="projetos/"
+              href="/projetos/"
               className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
             >
               <Folder width={18} className="mr-1" aria-hidden="true" />
               Projetos
             </Link>
             <Link
-              href="portifolio/"
+              href="/portifolio/"
               className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
             >
               <File width={18} className="mr-1" aria-hidden="true" />
               Portifolio
             </Link>
             <Link
-              href="dashboard/"
+              href="/dashboard/"
               className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
             >
               <LayoutDashboard width={18} className="text-zinc-200 mr-1" />
@@ -75,10 +75,15 @@ export default function Navbar() {
               <SearchCommand />
             </div>
             <Link
-              href="usuario/"
+              href="/usuario/"
               className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
             >
-              <User width={30} className="mr-1" aria-hidden="true" />
+              <User
+                width={40}
+                height={40}
+                className="border rounded-full border-zinc-950 bg-zinc-900 hover:bg-zinc-400 hover:text-zinc-900 p-2 mr-1"
+                aria-hidden="true"
+              />
             </Link>
 
             {/* Botão de Logout */}

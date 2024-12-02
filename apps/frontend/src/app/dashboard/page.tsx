@@ -1,7 +1,33 @@
+'use client';
+
 import Navbar from '@/components/navbar';
+import api from '@/services/api';
 import { Activity, Folder, UserCircle } from 'lucide-react';
+import React from 'react';
 
 export default function Dashboard() {
+  const [totalProjetos, setTotalProjetos] = React.useState<number>(0);
+
+  React.useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await api.get('/projects'); // Supondo que esta rota retorna os projetos
+        const data = response.data;
+
+        // Verifique se `data` é um array ou possui uma propriedade que contém os projetos
+        const projects = data.count;
+
+        // Calcula o total de projetos e os projetos ativos
+        const total = projects;
+        setTotalProjetos(total);
+      } catch (error) {
+        console.error('Erro ao buscar projetos:', error);
+      }
+    };
+
+    fetchProjects();
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -22,14 +48,14 @@ export default function Dashboard() {
                 <Activity className="text-blue-500 h-10 w-10 mr-4" />
                 <div>
                   <h3 className="text-lg font-bold">Projetos Ativos</h3>
-                  <p>5</p>
+                  <p>7</p>
                 </div>
               </div>
               <div className="bg-zinc-800 p-4 rounded-lg shadow flex items-center">
                 <Folder className="text-green-500 h-10 w-10 mr-4" />
                 <div>
                   <h3 className="text-lg font-bold">Total de Projetos</h3>
-                  <p>12</p>
+                  <p>{totalProjetos}</p>
                 </div>
               </div>
               <div className="bg-zinc-800 p-4 rounded-lg shadow flex items-center">
