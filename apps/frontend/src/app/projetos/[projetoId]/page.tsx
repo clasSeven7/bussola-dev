@@ -3,7 +3,7 @@
 import Navbar from '@/components/navbar';
 import { Button } from '@/components/ui/button';
 import api from '@/services/api';
-import { ClipboardPen, FileText, Github } from 'lucide-react';
+import { CircleArrowLeft, ClipboardPen, IdCard, Info } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -30,12 +30,17 @@ export default function ProjetoPage({
     image?: string;
     description?: string;
     technologies?: { [key: string]: string[] };
-    githubUrl?: string;
-    documentationUrl?: string;
+    user: string;
   }
 
   const [project, setProject] = React.useState<Project | null>(null); // Para armazenar os dados do projeto
-  const { projetoId } = params; // Acessando o param corretamente
+  const [projetoId, setProjetoId] = React.useState<string | null>(null);
+  // Desestruturação de params e controle com React.use()
+  React.useEffect(() => {
+    if (params.projetoId) {
+      setProjetoId(params.projetoId); // Armazena o projetoId assim que está disponível
+    }
+  }, [params]);
 
   // Carrega o projeto ao montar o componente
   React.useEffect(() => {
@@ -71,14 +76,26 @@ export default function ProjetoPage({
               </button>
             </Link>
           </div>
-
-          {/* Exibe a imagem do projeto, com fallback caso não exista */}
+          <div>
+            <div className="flex items-center justify-left gap-2 mb-4">
+              <Info className="w-6 h-6" />
+              <h2 className="text-xl font-semibold">Informações do Projeto:</h2>
+            </div>
+            <div className="flex items-center justify-left gap-2">
+              <IdCard className="w-6 h-6" />
+              <p className="text-zinc-200">ID do Projeto: {projetoId}</p>
+            </div>
+            <div className="flex items-center justify-left gap-2">
+              <IdCard className="w-6 h-6" />
+              <p className="text-zinc-200">ID do Usuário: {project.user}</p>
+            </div>
+          </div>
           <Image
-            src={project.image || '/default-image.png'} // Fallback para imagem padrão
+            src={project.image || '/default-image.png'}
             alt={project.title}
-            width={128}
-            height={128}
-            className="rounded-md"
+            width={512}
+            height={512}
+            className="rounded-md mt-4"
           />
 
           {/* Exibe descrição do projeto com texto de fallback */}
@@ -103,33 +120,14 @@ export default function ProjetoPage({
               )}
             </ul>
           </div>
-
-          <div className="mt-8 flex space-x-4">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white"
-              >
-                <Github className="w-6 h-6" />
-              </a>
-            )}
-            {project.documentationUrl && (
-              <a
-                href={project.documentationUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white"
-              >
-                <FileText className="w-6 h-6" />
-              </a>
-            )}
-          </div>
         </div>
         <div className="flex justify-center items-center text-center">
           <Button className="flex justify-center items-center pt-8 pb-8 pr-22 pl-22">
-            <Link href="/projetos/" className="text-base">
+            <Link
+              href="/projetos/"
+              className="flex items-center gap-1 text-base"
+            >
+              <CircleArrowLeft className="w-6 h-6" />
               Voltar
             </Link>
           </Button>

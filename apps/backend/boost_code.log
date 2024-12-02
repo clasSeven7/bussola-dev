@@ -1224,3 +1224,671 @@ RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash an
 2024-12-02 17:45:25,966 - WARNING - Not Found: /api/projects/stats/
 2024-12-02 17:59:41,373 - WARNING - Unauthorized: /api/projects/
 2024-12-02 17:59:41,389 - WARNING - Unauthorized: /api/projects/
+2024-12-02 18:21:08,017 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:21:08,024 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:21:09,359 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:21:15,673 - WARNING - Unauthorized: /api/projects/
+2024-12-02 18:24:56,001 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:31:07,466 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:31:48,650 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:31:56,630 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:35:03,750 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:35:12,714 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:35:47,962 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:40:46,742 - WARNING - Unauthorized: /api/projects/
+2024-12-02 18:44:53,492 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:45:38,110 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:46:21,469 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 18:47:21,936 - WARNING - Unauthorized: /api/projects/
+2024-12-02 18:47:27,685 - WARNING - Unauthorized: /api/token/
+2024-12-02 18:47:53,872 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:48:06,035 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:49:01,964 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:49:05,789 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:55:24,439 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 18:55:34,113 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:29:38,922 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:33:05,831 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:33:09,369 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 21:33:34,584 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 21:33:40,552 - WARNING - Unauthorized: /api/projects/
+2024-12-02 21:34:14,857 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:34:37,712 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:35:29,047 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:40:39,236 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:40:48,471 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:41:37,087 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:41:55,131 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:42:50,972 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:42:55,273 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:43:31,648 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:44:21,398 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:44:24,632 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:46:02,185 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:48:48,595 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:49:49,507 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:49:52,954 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:50:08,450 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:52:39,014 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:52:48,498 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:54:48,216 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:55:17,986 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:55:55,658 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:56:41,972 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:57:04,544 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:57:26,521 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:57:37,156 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 21:59:07,342 - INFO - Watching for file changes with StatReloader
+2024-12-02 21:59:12,901 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 22:01:42,743 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 22:01:59,202 - INFO - Watching for file changes with StatReloader
+2024-12-02 22:02:28,117 - INFO - Watching for file changes with StatReloader
+2024-12-02 22:02:32,292 - WARNING - Unauthorized: /api/projects/3/
+2024-12-02 22:03:26,954 - DEBUG - Importing BlpImagePlugin
+2024-12-02 22:03:26,956 - DEBUG - Importing BmpImagePlugin
+2024-12-02 22:03:26,956 - DEBUG - Importing BufrStubImagePlugin
+2024-12-02 22:03:26,957 - DEBUG - Importing CurImagePlugin
+2024-12-02 22:03:26,957 - DEBUG - Importing DcxImagePlugin
+2024-12-02 22:03:26,957 - DEBUG - Importing DdsImagePlugin
+2024-12-02 22:03:26,960 - DEBUG - Importing EpsImagePlugin
+2024-12-02 22:03:26,960 - DEBUG - Importing FitsImagePlugin
+2024-12-02 22:03:26,960 - DEBUG - Importing FliImagePlugin
+2024-12-02 22:03:26,961 - DEBUG - Importing FpxImagePlugin
+2024-12-02 22:03:26,961 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-02 22:03:26,961 - DEBUG - Importing FtexImagePlugin
+2024-12-02 22:03:26,961 - DEBUG - Importing GbrImagePlugin
+2024-12-02 22:03:26,962 - DEBUG - Importing GifImagePlugin
+2024-12-02 22:03:26,962 - DEBUG - Importing GribStubImagePlugin
+2024-12-02 22:03:26,962 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-02 22:03:26,962 - DEBUG - Importing IcnsImagePlugin
+2024-12-02 22:03:26,963 - DEBUG - Importing IcoImagePlugin
+2024-12-02 22:03:26,963 - DEBUG - Importing ImImagePlugin
+2024-12-02 22:03:26,964 - DEBUG - Importing ImtImagePlugin
+2024-12-02 22:03:26,964 - DEBUG - Importing IptcImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Importing JpegImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Importing McIdasImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Importing MicImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-02 22:03:26,965 - DEBUG - Importing MpegImagePlugin
+2024-12-02 22:03:26,965 - DEBUG - Importing MpoImagePlugin
+2024-12-02 22:03:26,968 - DEBUG - Importing MspImagePlugin
+2024-12-02 22:03:26,968 - DEBUG - Importing PalmImagePlugin
+2024-12-02 22:03:26,969 - DEBUG - Importing PcdImagePlugin
+2024-12-02 22:03:26,969 - DEBUG - Importing PcxImagePlugin
+2024-12-02 22:03:26,969 - DEBUG - Importing PdfImagePlugin
+2024-12-02 22:03:26,972 - DEBUG - Importing PixarImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing PngImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing PpmImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing PsdImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing QoiImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing SgiImagePlugin
+2024-12-02 22:03:26,973 - DEBUG - Importing SpiderImagePlugin
+2024-12-02 22:03:26,974 - DEBUG - Importing SunImagePlugin
+2024-12-02 22:03:26,974 - DEBUG - Importing TgaImagePlugin
+2024-12-02 22:03:26,974 - DEBUG - Importing TiffImagePlugin
+2024-12-02 22:03:26,974 - DEBUG - Importing WebPImagePlugin
+2024-12-02 22:03:26,976 - DEBUG - Importing WmfImagePlugin
+2024-12-02 22:03:26,976 - DEBUG - Importing XbmImagePlugin
+2024-12-02 22:03:26,977 - DEBUG - Importing XpmImagePlugin
+2024-12-02 22:03:26,977 - DEBUG - Importing XVThumbImagePlugin
+2024-12-02 22:03:26,980 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:03:32,780 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:03:36,890 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:04:45,225 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:05:58,429 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:06:18,488 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:06:21,501 - WARNING - Bad Request: /api/projects/4/
+2024-12-02 22:14:56,017 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 22:14:56,017 - DEBUG - STREAM b'IDAT' 41 8192
+2024-12-02 22:15:26,143 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 22:15:26,143 - DEBUG - STREAM b'sRGB' 41 1
+2024-12-02 22:15:26,143 - DEBUG - STREAM b'gAMA' 54 4
+2024-12-02 22:15:26,143 - DEBUG - STREAM b'pHYs' 70 9
+2024-12-02 22:15:26,143 - DEBUG - STREAM b'IDAT' 91 65445
