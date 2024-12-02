@@ -44,15 +44,20 @@ export default function Projects() {
   const deleteProject = (projectId: number) => {
     if (window.confirm('Tem certeza que deseja excluir este projeto?')) {
       api
-        .delete(`/projects/${projectId}`)
+        .delete(`/projects/${projectId}/`)
         .then(() => {
-          // Atualiza a lista de projetos removendo o projeto deletado
           setProjects(projects.filter((project) => project.id !== projectId));
           alert('Projeto excluído com sucesso!');
         })
         .catch((error) => {
           console.error('Erro ao excluir o projeto:', error);
-          alert('Ocorreu um erro ao excluir o projeto.');
+          if (error.response?.status === 401) {
+            alert('Sessão expirada. Faça login novamente.');
+            localStorage.removeItem('token');
+            window.location.href = '/login'; // Redirecionar para login
+          } else {
+            alert('Ocorreu um erro ao excluir o projeto.');
+          }
         });
     }
   };

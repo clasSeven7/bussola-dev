@@ -1892,3 +1892,32 @@ RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash an
 2024-12-02 22:15:26,143 - DEBUG - STREAM b'gAMA' 54 4
 2024-12-02 22:15:26,143 - DEBUG - STREAM b'pHYs' 70 9
 2024-12-02 22:15:26,143 - DEBUG - STREAM b'IDAT' 91 65445
+2024-12-02 22:27:21,262 - ERROR - Internal Server Error: /api/projects/4
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/4/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 22:27:49,541 - WARNING - Unauthorized: /api/projects/
+2024-12-02 22:28:41,516 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
