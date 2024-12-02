@@ -2,6 +2,7 @@
 
 import { Bar } from 'react-chartjs-2';
 
+import Navbar from '@/components/navbar';
 import {
   BarElement,
   CategoryScale,
@@ -11,7 +12,6 @@ import {
   Title,
   Tooltip,
 } from 'chart.js';
-import Navbar from '../components/navbar';
 
 // Registrar as escalas e outros elementos necessários
 ChartJS.register(

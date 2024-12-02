@@ -1,5 +1,5 @@
+import Navbar from '@/components/navbar';
 import { Activity, Folder, UserCircle } from 'lucide-react';
-import Navbar from '../components/navbar';
 
 export default function Dashboard() {
   return (

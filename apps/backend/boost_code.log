@@ -728,3 +728,486 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-12-02 02:51:55,580 - WARNING - Bad Request: /api/projects/
 2024-12-02 02:52:02,919 - WARNING - Bad Request: /api/projects/
 2024-12-02 02:52:05,999 - WARNING - Bad Request: /api/projects/
+2024-12-02 11:00:58,507 - INFO - Watching for file changes with StatReloader
+2024-12-02 11:01:04,006 - WARNING - Unauthorized: /api/projects/
+2024-12-02 11:01:04,067 - WARNING - Unauthorized: /api/projects/
+2024-12-02 11:39:52,164 - WARNING - Unauthorized: /api/projects/usuario/
+2024-12-02 11:39:56,117 - WARNING - Unauthorized: /api/projects/usuario/
+2024-12-02 11:39:57,326 - WARNING - Unauthorized: /api/projects/usuario/
+2024-12-02 11:40:29,546 - WARNING - Unauthorized: /api/projects/usuario/
+2024-12-02 11:40:33,468 - WARNING - Unauthorized: /api/projects/
+2024-12-02 11:51:12,741 - WARNING - Bad Request: /api/projects/
+2024-12-02 11:54:53,722 - WARNING - Unauthorized: /api/projects/
+2024-12-02 11:57:26,712 - WARNING - Unsupported Media Type: /api/projects/
+2024-12-02 12:01:26,454 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 12:01:26,454 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 12:01:26,454 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 12:01:26,455 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 12:01:26,455 - DEBUG - STREAM b'IDAT' 91 378154
+2024-12-02 12:01:26,456 - DEBUG - Importing BlpImagePlugin
+2024-12-02 12:01:26,457 - DEBUG - Importing BmpImagePlugin
+2024-12-02 12:01:26,458 - DEBUG - Importing BufrStubImagePlugin
+2024-12-02 12:01:26,458 - DEBUG - Importing CurImagePlugin
+2024-12-02 12:01:26,459 - DEBUG - Importing DcxImagePlugin
+2024-12-02 12:01:26,460 - DEBUG - Importing DdsImagePlugin
+2024-12-02 12:01:26,462 - DEBUG - Importing EpsImagePlugin
+2024-12-02 12:01:26,463 - DEBUG - Importing FitsImagePlugin
+2024-12-02 12:01:26,463 - DEBUG - Importing FliImagePlugin
+2024-12-02 12:01:26,464 - DEBUG - Importing FpxImagePlugin
+2024-12-02 12:01:26,464 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-02 12:01:26,464 - DEBUG - Importing FtexImagePlugin
+2024-12-02 12:01:26,464 - DEBUG - Importing GbrImagePlugin
+2024-12-02 12:01:26,465 - DEBUG - Importing GifImagePlugin
+2024-12-02 12:01:26,465 - DEBUG - Importing GribStubImagePlugin
+2024-12-02 12:01:26,465 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-02 12:01:26,465 - DEBUG - Importing IcnsImagePlugin
+2024-12-02 12:01:26,466 - DEBUG - Importing IcoImagePlugin
+2024-12-02 12:01:26,467 - DEBUG - Importing ImImagePlugin
+2024-12-02 12:01:26,467 - DEBUG - Importing ImtImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Importing IptcImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Importing JpegImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Importing McIdasImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Importing MicImagePlugin
+2024-12-02 12:01:26,468 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-02 12:01:26,469 - DEBUG - Importing MpegImagePlugin
+2024-12-02 12:01:26,469 - DEBUG - Importing MpoImagePlugin
+2024-12-02 12:01:26,471 - DEBUG - Importing MspImagePlugin
+2024-12-02 12:01:26,472 - DEBUG - Importing PalmImagePlugin
+2024-12-02 12:01:26,472 - DEBUG - Importing PcdImagePlugin
+2024-12-02 12:01:26,473 - DEBUG - Importing PcxImagePlugin
+2024-12-02 12:01:26,473 - DEBUG - Importing PdfImagePlugin
+2024-12-02 12:01:26,476 - DEBUG - Importing PixarImagePlugin
+2024-12-02 12:01:26,477 - DEBUG - Importing PngImagePlugin
+2024-12-02 12:01:26,477 - DEBUG - Importing PpmImagePlugin
+2024-12-02 12:01:26,477 - DEBUG - Importing PsdImagePlugin
+2024-12-02 12:01:26,478 - DEBUG - Importing QoiImagePlugin
+2024-12-02 12:01:26,478 - DEBUG - Importing SgiImagePlugin
+2024-12-02 12:01:26,478 - DEBUG - Importing SpiderImagePlugin
+2024-12-02 12:01:26,479 - DEBUG - Importing SunImagePlugin
+2024-12-02 12:01:26,479 - DEBUG - Importing TgaImagePlugin
+2024-12-02 12:01:26,479 - DEBUG - Importing TiffImagePlugin
+2024-12-02 12:01:26,479 - DEBUG - Importing WebPImagePlugin
+2024-12-02 12:01:26,481 - DEBUG - Importing WmfImagePlugin
+2024-12-02 12:01:26,481 - DEBUG - Importing XbmImagePlugin
+2024-12-02 12:01:26,482 - DEBUG - Importing XpmImagePlugin
+2024-12-02 12:01:26,482 - DEBUG - Importing XVThumbImagePlugin
+2024-12-02 12:01:26,485 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:02:10,450 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 12:02:10,450 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 12:02:10,450 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 12:02:10,450 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 12:02:10,450 - DEBUG - STREAM b'IDAT' 91 378154
+2024-12-02 12:02:10,452 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:02:11,590 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 12:02:11,599 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 12:02:11,599 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 12:02:11,599 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 12:02:11,599 - DEBUG - STREAM b'IDAT' 91 378154
+2024-12-02 12:02:11,604 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:02:32,027 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:03:17,366 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 12:03:17,366 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 12:03:17,367 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 12:03:17,367 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 12:03:17,367 - DEBUG - STREAM b'IDAT' 91 378154
+2024-12-02 12:03:17,369 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:04:10,291 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 12:04:10,291 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 12:04:10,291 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 12:04:10,291 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 12:04:10,291 - DEBUG - STREAM b'IDAT' 91 378154
+2024-12-02 12:04:25,686 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:05:43,687 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:05:52,685 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:06:17,984 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:07:24,196 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:12:08,004 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:14:16,156 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:17:56,937 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:18:35,794 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:19:23,534 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:19:26,972 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:19:57,385 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:24:52,814 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:24:57,025 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:25:56,727 - WARNING - Unauthorized: /api/projects/
+2024-12-02 12:27:11,648 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:27:17,748 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:27:52,288 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:28:56,120 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:29:01,202 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:31:24,747 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:32:15,644 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:32:28,218 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:32:38,582 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:33:22,739 - WARNING - Bad Request: /api/projects/
+2024-12-02 12:33:53,532 - WARNING - Bad Request: /api/projects/
+2024-12-02 13:37:30,643 - WARNING - Unauthorized: /api/projects/
+2024-12-02 13:38:20,113 - WARNING - Bad Request: /api/projects/
+2024-12-02 13:38:29,086 - WARNING - Bad Request: /api/projects/
+2024-12-02 13:40:04,288 - WARNING - Bad Request: /api/projects/
+2024-12-02 13:44:17,095 - WARNING - Bad Request: /api/projects/
+2024-12-02 13:44:55,337 - WARNING - Not Found: /api/projects/projetos/
+2024-12-02 13:44:55,402 - WARNING - Not Found: /api/projects/projetos/
+2024-12-02 13:49:05,350 - ERROR - Internal Server Error: /api/projects/4
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/4/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 13:49:33,142 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 13:49:39,795 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 13:52:56,161 - WARNING - Unauthorized: /api/projects/
+2024-12-02 13:53:12,274 - ERROR - Internal Server Error: /api/projects/4
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/4/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 13:58:47,110 - ERROR - Internal Server Error: /api/projects/3
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:11:10,406 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:11:10,415 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:12:42,242 - WARNING - Bad Request: /api/projects/
+2024-12-02 14:12:58,373 - WARNING - Bad Request: /api/projects/
+2024-12-02 14:13:19,401 - WARNING - Bad Request: /api/projects/
+2024-12-02 14:13:22,721 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:13:23,042 - WARNING - Not Found: /favicon.ico
+2024-12-02 14:15:23,485 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:16:49,797 - WARNING - Bad Request: /api/projects/
+2024-12-02 14:17:46,292 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 14:17:46,293 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 14:17:46,293 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-02 14:17:46,293 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-02 14:17:46,293 - DEBUG - Importing BlpImagePlugin
+2024-12-02 14:17:46,295 - DEBUG - Importing BmpImagePlugin
+2024-12-02 14:17:46,295 - DEBUG - Importing BufrStubImagePlugin
+2024-12-02 14:17:46,295 - DEBUG - Importing CurImagePlugin
+2024-12-02 14:17:46,296 - DEBUG - Importing DcxImagePlugin
+2024-12-02 14:17:46,296 - DEBUG - Importing DdsImagePlugin
+2024-12-02 14:17:46,302 - DEBUG - Importing EpsImagePlugin
+2024-12-02 14:17:46,303 - DEBUG - Importing FitsImagePlugin
+2024-12-02 14:17:46,304 - DEBUG - Importing FliImagePlugin
+2024-12-02 14:17:46,304 - DEBUG - Importing FpxImagePlugin
+2024-12-02 14:17:46,304 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-02 14:17:46,304 - DEBUG - Importing FtexImagePlugin
+2024-12-02 14:17:46,305 - DEBUG - Importing GbrImagePlugin
+2024-12-02 14:17:46,305 - DEBUG - Importing GifImagePlugin
+2024-12-02 14:17:46,305 - DEBUG - Importing GribStubImagePlugin
+2024-12-02 14:17:46,305 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-02 14:17:46,305 - DEBUG - Importing IcnsImagePlugin
+2024-12-02 14:17:46,306 - DEBUG - Importing IcoImagePlugin
+2024-12-02 14:17:46,307 - DEBUG - Importing ImImagePlugin
+2024-12-02 14:17:46,308 - DEBUG - Importing ImtImagePlugin
+2024-12-02 14:17:46,308 - DEBUG - Importing IptcImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Importing JpegImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Importing McIdasImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Importing MicImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-02 14:17:46,309 - DEBUG - Importing MpegImagePlugin
+2024-12-02 14:17:46,309 - DEBUG - Importing MpoImagePlugin
+2024-12-02 14:17:46,312 - DEBUG - Importing MspImagePlugin
+2024-12-02 14:17:46,312 - DEBUG - Importing PalmImagePlugin
+2024-12-02 14:17:46,313 - DEBUG - Importing PcdImagePlugin
+2024-12-02 14:17:46,313 - DEBUG - Importing PcxImagePlugin
+2024-12-02 14:17:46,313 - DEBUG - Importing PdfImagePlugin
+2024-12-02 14:17:46,317 - DEBUG - Importing PixarImagePlugin
+2024-12-02 14:17:46,317 - DEBUG - Importing PngImagePlugin
+2024-12-02 14:17:46,317 - DEBUG - Importing PpmImagePlugin
+2024-12-02 14:17:46,317 - DEBUG - Importing PsdImagePlugin
+2024-12-02 14:17:46,318 - DEBUG - Importing QoiImagePlugin
+2024-12-02 14:17:46,318 - DEBUG - Importing SgiImagePlugin
+2024-12-02 14:17:46,318 - DEBUG - Importing SpiderImagePlugin
+2024-12-02 14:17:46,319 - DEBUG - Importing SunImagePlugin
+2024-12-02 14:17:46,319 - DEBUG - Importing TgaImagePlugin
+2024-12-02 14:17:46,319 - DEBUG - Importing TiffImagePlugin
+2024-12-02 14:17:46,319 - DEBUG - Importing WebPImagePlugin
+2024-12-02 14:17:46,320 - DEBUG - Importing WmfImagePlugin
+2024-12-02 14:17:46,320 - DEBUG - Importing XbmImagePlugin
+2024-12-02 14:17:46,321 - DEBUG - Importing XpmImagePlugin
+2024-12-02 14:17:46,321 - DEBUG - Importing XVThumbImagePlugin
+2024-12-02 14:18:34,654 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 14:18:34,654 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 14:18:34,654 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-02 14:18:34,654 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-02 14:19:54,517 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-02 14:19:54,518 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-02 14:19:54,518 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-02 14:19:54,518 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-02 14:19:54,518 - DEBUG - STREAM b'IDAT' 91 21811
+2024-12-02 14:21:41,872 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:21:42,320 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:21:55,776 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:21:56,087 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:22:08,454 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:22:08,838 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:22:11,001 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:22:11,311 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:22:17,589 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:22:17,887 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:22:19,062 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:22:19,337 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:23:44,940 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-02 14:23:45,212 - INFO - Watching for file changes with StatReloader
+2024-12-02 14:26:22,415 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:26:22,427 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:29:05,168 - ERROR - Internal Server Error: /api/projects/5
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/5/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:39:10,449 - DEBUG - Importing BlpImagePlugin
+2024-12-02 14:39:10,450 - DEBUG - Importing BmpImagePlugin
+2024-12-02 14:39:10,450 - DEBUG - Importing BufrStubImagePlugin
+2024-12-02 14:39:10,450 - DEBUG - Importing CurImagePlugin
+2024-12-02 14:39:10,451 - DEBUG - Importing DcxImagePlugin
+2024-12-02 14:39:10,451 - DEBUG - Importing DdsImagePlugin
+2024-12-02 14:39:10,453 - DEBUG - Importing EpsImagePlugin
+2024-12-02 14:39:10,454 - DEBUG - Importing FitsImagePlugin
+2024-12-02 14:39:10,454 - DEBUG - Importing FliImagePlugin
+2024-12-02 14:39:10,454 - DEBUG - Importing FpxImagePlugin
+2024-12-02 14:39:10,455 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-02 14:39:10,455 - DEBUG - Importing FtexImagePlugin
+2024-12-02 14:39:10,455 - DEBUG - Importing GbrImagePlugin
+2024-12-02 14:39:10,455 - DEBUG - Importing GifImagePlugin
+2024-12-02 14:39:10,455 - DEBUG - Importing GribStubImagePlugin
+2024-12-02 14:39:10,455 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-02 14:39:10,456 - DEBUG - Importing IcnsImagePlugin
+2024-12-02 14:39:10,457 - DEBUG - Importing IcoImagePlugin
+2024-12-02 14:39:10,457 - DEBUG - Importing ImImagePlugin
+2024-12-02 14:39:10,458 - DEBUG - Importing ImtImagePlugin
+2024-12-02 14:39:10,458 - DEBUG - Importing IptcImagePlugin
+2024-12-02 14:39:10,458 - DEBUG - Importing JpegImagePlugin
+2024-12-02 14:39:10,458 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-02 14:39:10,458 - DEBUG - Importing McIdasImagePlugin
+2024-12-02 14:39:10,459 - DEBUG - Importing MicImagePlugin
+2024-12-02 14:39:10,459 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-02 14:39:10,459 - DEBUG - Importing MpegImagePlugin
+2024-12-02 14:39:10,459 - DEBUG - Importing MpoImagePlugin
+2024-12-02 14:39:10,462 - DEBUG - Importing MspImagePlugin
+2024-12-02 14:39:10,462 - DEBUG - Importing PalmImagePlugin
+2024-12-02 14:39:10,463 - DEBUG - Importing PcdImagePlugin
+2024-12-02 14:39:10,463 - DEBUG - Importing PcxImagePlugin
+2024-12-02 14:39:10,463 - DEBUG - Importing PdfImagePlugin
+2024-12-02 14:39:10,466 - DEBUG - Importing PixarImagePlugin
+2024-12-02 14:39:10,467 - DEBUG - Importing PngImagePlugin
+2024-12-02 14:39:10,467 - DEBUG - Importing PpmImagePlugin
+2024-12-02 14:39:10,467 - DEBUG - Importing PsdImagePlugin
+2024-12-02 14:39:10,467 - DEBUG - Importing QoiImagePlugin
+2024-12-02 14:39:10,467 - DEBUG - Importing SgiImagePlugin
+2024-12-02 14:39:10,468 - DEBUG - Importing SpiderImagePlugin
+2024-12-02 14:39:10,468 - DEBUG - Importing SunImagePlugin
+2024-12-02 14:39:10,468 - DEBUG - Importing TgaImagePlugin
+2024-12-02 14:39:10,468 - DEBUG - Importing TiffImagePlugin
+2024-12-02 14:39:10,468 - DEBUG - Importing WebPImagePlugin
+2024-12-02 14:39:10,470 - DEBUG - Importing WmfImagePlugin
+2024-12-02 14:39:10,470 - DEBUG - Importing XbmImagePlugin
+2024-12-02 14:39:10,471 - DEBUG - Importing XpmImagePlugin
+2024-12-02 14:39:10,471 - DEBUG - Importing XVThumbImagePlugin
+2024-12-02 14:42:14,311 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:42:14,315 - WARNING - Unauthorized: /api/projects/
+2024-12-02 14:42:37,475 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:47:37,253 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:47:47,875 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:49:11,260 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:50:36,571 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:50:39,832 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:52:39,748 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:52:49,728 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:53:13,346 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-12-02 14:53:22,045 - ERROR - Internal Server Error: /api/projects/8
+Traceback (most recent call last):
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/utils/deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saulojustiniano/www/classeven/bussola-dev/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to localhost:8000/api/projects/8/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.

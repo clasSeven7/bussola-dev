@@ -1,5 +1,6 @@
 'use client';
 
+import Navbar from '@/components/navbar';
 import {
   Heart,
   PenTool,
@@ -12,7 +13,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { usuario } from '../../lib/dataUser';
-import Navbar from '../components/navbar';
 
 export default function User() {
   // Estado para o botão "Seguir"

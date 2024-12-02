@@ -1,6 +1,13 @@
 'use client';
 
-import { File, Folder, House, LayoutDashboard, LogOut } from 'lucide-react';
+import {
+  File,
+  Folder,
+  House,
+  LayoutDashboard,
+  LogOut,
+  User,
+} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -71,13 +78,7 @@ export default function Navbar() {
               href="usuario/"
               className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
             >
-              <Image
-                src="https://github.com/saulojustiniano1.png"
-                alt="avatar"
-                width={36}
-                height={36}
-                className="rounded-full border-2 border-zinc-800"
-              />
+              <User width={30} className="mr-1" aria-hidden="true" />
             </Link>
 
             {/* Botão de Logout */}

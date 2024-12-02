@@ -20,7 +20,6 @@ export default function Home() {
               Feed de Projetos
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Mapeia os projetos para renderizar o ProjectCard */}
               {feedProjects.map((project) => (
                 <ProjectCard
                   key={project.id}

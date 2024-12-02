@@ -1,13 +1,13 @@
-'use client'; // Diretiva para tornar o componente um Client Component
+'use client';
 
-import Navbar from '@/app/components/navbar';
+import Navbar from '@/components/navbar';
 import { Button } from '@/components/ui/button';
-import api from '@/services/api'; // Importando a instância da API configurada
+import api from '@/services/api';
 import { ClipboardPen, FileText, Github } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import React from 'react'; // Certifique-se de importar o React
+import React from 'react';
 
 // Função para buscar o projeto no banco de dados via API
 async function fetchProject(projetoId: string) {

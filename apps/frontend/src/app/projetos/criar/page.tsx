@@ -23,6 +23,7 @@ export default function CreateProject() {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(false);
 
+  // Carrega a lista de usuários
   useEffect(() => {
     api
       .get('/users/')
@@ -37,6 +38,7 @@ export default function CreateProject() {
       });
   }, []);
 
+  // Valida o JSON para o campo tecnologias
   const validateTechnologies = (value: string) => {
     try {
       JSON.parse(value);
@@ -46,60 +48,80 @@ export default function CreateProject() {
     }
   };
 
+  // Lida com o envio do formulário
   const handleSave = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData();
-    formData.append('title', title);
-    formData.append('description', description);
 
-    // Verifica se a imagem foi selecionada e a adiciona ao FormData
+    // Adicionando dados ao FormData
+    formData.append('title', title || '');
+    formData.append('description', description || '');
+
     if (image) {
-      formData.append('image', image); // Certifique-se de que 'image' é um File
+      formData.append('image', image);
     }
 
-    // Valida e adiciona o campo 'technologies' como JSON válido
     try {
-      const techData = JSON.parse(technologies);
-      formData.append('technologies', JSON.stringify(techData)); // Envia como string JSON
+      const techData = JSON.parse(technologies || '{}');
+      formData.append('technologies', JSON.stringify(techData));
     } catch {
       alert(
-        'Erro ao processar o campo Tecnologias. Certifique-se de que está no formato JSON válido.'
+        'Erro no campo Tecnologias. Certifique-se de que está no formato JSON válido.'
       );
       setLoading(false);
       return;
     }
 
-    // Certifica-se de que o campo 'user' é enviado corretamente
-    if (user) {
-      formData.append('user', user); // Envia o ID do usuário selecionado
-    } else {
+    if (!user) {
       alert('Por favor, selecione um usuário.');
       setLoading(false);
       return;
     }
 
+    formData.append('user', user);
+
+    console.log(formData.get('title'));
+
     try {
+      const token = localStorage.getItem('token');
+      if (!token) {
+        alert('Token não encontrado. Por favor, faça login novamente.');
+        return;
+      }
+
       await api.post('/projects/', formData, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`, // Cabeçalho de autenticação
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'multipart/form-data', // Se estiver enviando um arquivo
         },
       });
 
-      // Redireciona após sucesso
+      alert('Projeto salvo com sucesso!');
       router.push('/projetos');
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
+      console.error('Erro ao salvar o projeto:', error); // Log completo do erro
+
       if (error.response) {
-        alert(`Erro: ${error.response.data.detail || 'Falha no servidor.'}`);
+        alert(
+          `Erro: ${error.response.status} - ${
+            error.response.data.detail || 'Detalhes não disponíveis.'
+          }`
+        );
       } else {
-        alert('Erro de rede. Verifique sua conexão.');
+        alert('Erro desconhecido ao salvar o projeto.');
       }
-      console.error('Erro ao salvar o projeto:', error);
     } finally {
       setLoading(false);
     }
   };
+
+  // Exibição de mensagens de erro
+  const ErrorMessage = ({ message }: { message: string }) => (
+    <p className="text-red-500 text-sm mt-1">{message}</p>
+  );
 
   return (
     <>
@@ -159,7 +181,6 @@ export default function CreateProject() {
                   setImage(e.target.files ? e.target.files[0] : null)
                 }
                 className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
-                required
               />
             </div>
 
@@ -177,22 +198,19 @@ export default function CreateProject() {
                   }
                 </code>
               </pre>
-              <input
-                type="text"
+              <textarea
                 id="technologies"
                 value={technologies}
                 onChange={(e) => {
                   setTechnologies(e.target.value);
                   validateTechnologies(e.target.value);
                 }}
-                className={`w-full p-3 rounded-md bg-zinc-800 text-white border ${
+                className={`w-full h-32 p-3 rounded-md bg-zinc-800 text-white border ${
                   techError ? 'border-red-500' : 'border-zinc-700'
                 }`}
                 required
               />
-              {techError && (
-                <p className="text-red-500 text-sm mt-1">{techError}</p>
-              )}
+              {techError && <ErrorMessage message={techError} />}
             </div>
 
             <div className="mb-4">
@@ -225,7 +243,7 @@ export default function CreateProject() {
             <div className="flex justify-between mt-6">
               <button
                 type="submit"
-                className="bg-zinc-800 text-white px-6 py-3 rounded-md hover:bg-zinc-700 disabled:bg-zinc-600"
+                className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-500 disabled:bg-blue-400"
                 disabled={loading}
               >
                 {loading ? 'Salvando...' : 'Salvar'}

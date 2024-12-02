@@ -1,118 +1,110 @@
 'use client';
 
-import Navbar from '@/app/components/navbar';
-import { CirclePlus, ClipboardPen, Trash } from 'lucide-react';
+import Navbar from '@/components/navbar';
+import { Button } from '@/components/ui/button';
+import api from '@/services/api';
+import { ClipboardPen, FileText } from 'lucide-react'; // Adiciona os ícones
+import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { notFound, useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
 
+// Função para buscar o projeto no banco de dados via API
 async function fetchProject(projetoId: string) {
-  const projects = [
-    {
-      id: '1',
-      title: 'Meu Projeto 1',
-      description: 'Descrição detalhada do projeto 1.',
-      imageUrl: '/image.png',
-      technologies: {
-        frontend: ['React', 'Tailwind CSS'],
-        backend: ['Django', 'PostgreSQL'],
-      },
-      githubUrl: 'https://github.com/exemplo/projeto1',
-      documentationUrl: 'https://docs.projeto1.com',
-    },
-  ];
-
-  return projects.find((project) => project.id === projetoId);
+  try {
+    const response = await api.get(`/projects/${projetoId}`);
+    return response.data; // Retorna os dados do projeto
+  } catch (error) {
+    console.error('Erro ao buscar projeto:', error);
+    return null;
+  }
 }
 
-export default function EditarProjetoPage({
+// Função para atualizar o projeto na API
+async function updateProject(projetoId: string, updatedData: any) {
+  try {
+    const response = await api.put(`/projects/${projetoId}`, updatedData);
+    return response.data; // Retorna os dados do projeto atualizado
+  } catch (error) {
+    console.error('Erro ao atualizar projeto:', error);
+    throw error;
+  }
+}
+
+export default function EditProjectPage({
   params,
 }: {
   params: { projetoId: string };
-}): JSX.Element {
-  const router = useRouter();
+}) {
   interface Project {
-    id: string;
     title: string;
-    description: string;
-    imageUrl: string;
-    technologies: {
-      frontend: string[];
-      backend: string[];
-    };
-    githubUrl: string;
-    documentationUrl: string;
+    image?: string;
+    description?: string;
+    technologies?: { [key: string]: string[] };
+    githubUrl?: string;
+    documentationUrl?: string;
   }
 
-  const [project, setProject] = useState<Project | null>(null);
+  const router = useRouter();
+  const { projetoId } = params; // Acessando o param corretamente
+  const [project, setProject] = useState<Project | null>(null); // Para armazenar os dados do projeto
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [image, setImage] = useState<File | null>(null);
+  const [technologies, setTechnologies] = useState('');
 
+  // Carrega o projeto ao montar o componente
   useEffect(() => {
     const loadProject = async () => {
-      if (params.projetoId) {
-        const fetchedProject = await fetchProject(params.projetoId);
-        if (fetchedProject) {
-          setProject(fetchedProject);
-        } else {
-          console.error('Project not found');
-        }
+      if (!projetoId) return; // Verifica se o projetoId foi resolvido
+      const projectData = await fetchProject(projetoId);
+      if (!projectData) {
+        notFound(); // Mostra a página 404 se o projeto não for encontrado
+      } else {
+        setProject(projectData);
+        setTitle(projectData.title || '');
+        setDescription(projectData.description || '');
+        setTechnologies(JSON.stringify(projectData.technologies || {}));
       }
     };
 
-    // Unwrap params using React.use() here if it's a Promise.
+    console.log(projetoId);
+
     loadProject();
-  }, [params?.projetoId]); // Ensure you're referencing params correctly.
+  }, [projetoId]);
 
-  if (!project) {
-    return <div>Carregando...</div>;
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
+  // Função para salvar as edições
+  const handleSave = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('Enviando dados do projeto', project);
-    router.push(`/projetos/${params.projetoId}`);
+
+    const updatedProject = {
+      title,
+      description,
+      technologies: JSON.parse(technologies),
+      image: image ? await convertToBase64(image) : project?.image,
+    };
+
+    try {
+      await updateProject(projetoId, updatedProject);
+      alert('Projeto atualizado com sucesso!');
+      router.push(`/projetos/${projetoId}`); // Redireciona para a página do projeto
+    } catch (error) {
+      alert('Erro ao atualizar o projeto.');
+      console.error(error);
+    }
   };
 
-  const addTechnology = (category: 'frontend' | 'backend') => {
-    const newTech = '';
-    setProject({
-      ...project,
-      technologies: {
-        ...project.technologies,
-        [category]: [...project.technologies[category], newTech],
-      },
+  // Função auxiliar para converter imagem em base64
+  const convertToBase64 = (file: File) => {
+    return new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result as string);
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
     });
   };
 
-  const removeTechnology = (
-    category: 'frontend' | 'backend',
-    index: number
-  ) => {
-    const updatedTechs = [...project.technologies[category]];
-    updatedTechs.splice(index, 1);
-    setProject({
-      ...project,
-      technologies: {
-        ...project.technologies,
-        [category]: updatedTechs,
-      },
-    });
-  };
-
-  const handleTechChange = (
-    category: 'frontend' | 'backend',
-    index: number,
-    value: string
-  ) => {
-    const updatedTechs = [...project.technologies[category]];
-    updatedTechs[index] = value;
-    setProject({
-      ...project,
-      technologies: {
-        ...project.technologies,
-        [category]: updatedTechs,
-      },
-    });
-  };
+  if (!project) return null; // Renderiza nada até que o projeto seja carregado
 
   return (
     <>
@@ -123,164 +115,130 @@ export default function EditarProjetoPage({
             <h1 className="text-3xl font-bold">
               Editar Projeto: {project.title}
             </h1>
-            <Link href={`/projetos/${params.projetoId}`}>
-              <button className="flex items-center space-x-2 bg-zinc-700 text-white px-4 py-2 rounded-lg hover:bg-zinc-600">
+            <Link href={`/projetos/${projetoId}`}>
+              <button
+                aria-label="Voltar para o projeto"
+                className="flex items-center space-x-2 bg-zinc-700 text-white px-4 py-2 rounded-lg hover:bg-zinc-600"
+              >
                 <ClipboardPen className="w-5 h-5" />
                 <span>Cancelar</span>
               </button>
             </Link>
           </div>
 
-          <form onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label htmlFor="title" className="block text-lg font-semibold">
-                Título do Projeto
+          {/* Exibe a imagem do projeto */}
+          <Image
+            src={
+              image
+                ? URL.createObjectURL(image)
+                : project.image || '/default-image.png'
+            }
+            alt={project.title}
+            width={128}
+            height={128}
+            className="rounded-md"
+          />
+
+          {/* Formulário para editar o projeto */}
+          <form onSubmit={handleSave}>
+            <div className="mb-4">
+              <label
+                htmlFor="title"
+                className="block text-lg font-semibold mb-2"
+              >
+                Título
               </label>
               <input
                 type="text"
                 id="title"
-                name="title"
-                value={project.title}
-                onChange={(e) =>
-                  setProject({ ...project, title: e.target.value })
-                }
-                className="mt-2 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
+                required
               />
             </div>
 
-            <div className="mb-6">
+            <div className="mb-4">
               <label
                 htmlFor="description"
-                className="block text-lg font-semibold"
+                className="block text-lg font-semibold mb-2"
               >
                 Descrição
               </label>
               <textarea
                 id="description"
-                name="description"
-                value={project.description}
-                onChange={(e) =>
-                  setProject({ ...project, description: e.target.value })
-                }
-                className="mt-2 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                rows={4}
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
+                required
               />
             </div>
 
-            <div className="mb-6">
-              <h2 className="text-xl font-semibold">Tecnologias Utilizadas:</h2>
-
-              <div className="mt-4">
-                <label className="font-bold">Frontend:</label>
-                <ul className="mt-2">
-                  {project.technologies.frontend.map((tech, index) => (
-                    <li key={index} className="flex items-center space-x-2">
-                      <input
-                        type="text"
-                        value={tech}
-                        onChange={(e) =>
-                          handleTechChange('frontend', index, e.target.value)
-                        }
-                        className="mt-1 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => removeTechnology('frontend', index)}
-                        className="ml-2 text-red-500 hover:text-red-400"
-                      >
-                        <Trash className="w-5 h-5" />
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  type="button"
-                  onClick={() => addTechnology('frontend')}
-                  className="mt-2 flex items-center space-x-2 text-blue-500 hover:underline"
-                >
-                  <CirclePlus className="w-5 h-5" />
-                  <span>Adicionar mais</span>
-                </button>
-              </div>
-
-              <div className="mt-4">
-                <label className="font-bold">Backend:</label>
-                <ul className="mt-2">
-                  {project.technologies.backend.map((tech, index) => (
-                    <li key={index} className="flex items-center space-x-2">
-                      <input
-                        type="text"
-                        value={tech}
-                        onChange={(e) =>
-                          handleTechChange('backend', index, e.target.value)
-                        }
-                        className="mt-1 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => removeTechnology('backend', index)}
-                        className="ml-2 text-red-500 hover:text-red-400"
-                      >
-                        <Trash className="w-5 h-5" />
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-                <button
-                  type="button"
-                  onClick={() => addTechnology('backend')}
-                  className="mt-2 flex items-center space-x-2 text-blue-500 hover:underline"
-                >
-                  <CirclePlus className="w-5 h-5" />
-                  <span>Adicionar mais</span>
-                </button>
-              </div>
-            </div>
-
-            <div className="mb-6">
+            <div className="mb-4">
               <label
-                htmlFor="githubUrl"
-                className="block text-lg font-semibold"
+                htmlFor="image"
+                className="block text-lg font-semibold mb-2"
               >
-                URL do GitHub
+                Imagem
               </label>
               <input
-                type="url"
-                id="githubUrl"
-                name="githubUrl"
-                value={project.githubUrl}
+                type="file"
+                id="image"
+                accept="image/*"
                 onChange={(e) =>
-                  setProject({ ...project, githubUrl: e.target.value })
+                  setImage(e.target.files ? e.target.files[0] : null)
                 }
-                className="mt-2 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
               />
             </div>
 
             <div className="mb-6">
               <label
-                htmlFor="documentationUrl"
-                className="block text-lg font-semibold"
+                htmlFor="technologies"
+                className="block text-lg font-semibold mb-2"
               >
-                URL da Documentação
+                Tecnologias
               </label>
-              <input
-                type="url"
-                id="documentationUrl"
-                name="documentationUrl"
-                value={project.documentationUrl}
-                onChange={(e) =>
-                  setProject({ ...project, documentationUrl: e.target.value })
-                }
-                className="mt-2 w-full px-4 py-2 bg-zinc-800 text-white border border-zinc-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              <textarea
+                id="technologies"
+                value={technologies}
+                onChange={(e) => setTechnologies(e.target.value)}
+                className="w-full h-32 p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
+                required
               />
             </div>
 
-            <button
-              type="submit"
-              className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400"
-            >
-              Salvar
-            </button>
+            {/* Exibe os ícones de GitHub e Documentação */}
+            <div className="mb-6 flex space-x-4">
+              {project.githubUrl && (
+                <Link
+                  href={project.githubUrl}
+                  className="flex items-center space-x-2 text-blue-500"
+                  target="_blank"
+                >
+                  <span>GitHub</span>
+                </Link>
+              )}
+              {project.documentationUrl && (
+                <Link
+                  href={project.documentationUrl}
+                  className="flex items-center space-x-2 text-blue-500"
+                  target="_blank"
+                >
+                  <FileText className="w-6 h-6" />
+                  <span>Documentação</span>
+                </Link>
+              )}
+            </div>
+
+            <div className="mt-6 flex justify-between">
+              <Button
+                type="submit"
+                className="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-500"
+              >
+                Salvar Alterações
+              </Button>
+            </div>
           </form>
         </div>
       </div>

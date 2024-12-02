@@ -10,7 +10,7 @@ import {
   PaginationPrevious,
 } from '@/components/ui/pagination';
 import api from '@/services/api';
-import { CirclePlus, Eye, FileText, Github } from 'lucide-react';
+import { CirclePlus, Eye, FileText, Github, Trash } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -40,6 +40,22 @@ export default function Projects() {
         }
       });
   }, []);
+
+  const deleteProject = (projectId: number) => {
+    if (window.confirm('Tem certeza que deseja excluir este projeto?')) {
+      api
+        .delete(`/projects/${projectId}`)
+        .then(() => {
+          // Atualiza a lista de projetos removendo o projeto deletado
+          setProjects(projects.filter((project) => project.id !== projectId));
+          alert('Projeto excluído com sucesso!');
+        })
+        .catch((error) => {
+          console.error('Erro ao excluir o projeto:', error);
+          alert('Ocorreu um erro ao excluir o projeto.');
+        });
+    }
+  };
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -83,22 +99,38 @@ export default function Projects() {
                 className="bg-zinc-800 p-6 rounded-lg shadow-md hover:shadow-lg hover:bg-zinc-700 transition"
               >
                 <Image
-                  src={project.image}
+                  src={project.image || '/path/to/default-image.jpg'}
                   alt={project.title}
                   width={128}
                   height={128}
                   className="rounded-md w-full h-60 object-cover"
                 />
-                <Link
-                  href={`projetos/${project.id}`}
-                  className="flex align-center justify-center text-center text-zinc-200 mt-2"
-                >
-                  <Eye className="w-5 h-5 text-zinc-200 mr-1" />
-                  Visualizar
-                </Link>
+                <div className="flex justify-center items-center gap-7 mt-2">
+                  <Link
+                    href={`projetos/${project.id}`}
+                    className="flex align-center justify-center text-center text-zinc-200 hover:text-green-400"
+                  >
+                    <Eye className="w-5 h-5 mr-1" />
+                    Visualizar
+                  </Link>
+                  <button
+                    onClick={() => deleteProject(project.id)}
+                    className="flex justify-center items-center text-center text-zinc-200 hover:text-red-500"
+                  >
+                    <Trash className="mr-1 w-4 h-4" />
+                    Excluir
+                  </button>
+                </div>
+
+                {/* Título e Descrição com Overflow Controlado */}
                 <div className="mt-4">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <p className="text-zinc-300 mt-2">{project.description}</p>
+                  <h3 className="text-xl font-semibold overflow-hidden text-ellipsis whitespace-nowrap">
+                    {project.title}
+                  </h3>
+                  <p className="text-zinc-300 mt-2 overflow-hidden text-ellipsis whitespace-nowrap">
+                    {project.description}
+                  </p>
+
                   <div className="mt-4">
                     <h4 className="text-sm font-semibold">Tecnologias:</h4>
                     <ul className="text-zinc-400 text-sm">
@@ -107,24 +139,24 @@ export default function Projects() {
                           <li key={category} className="mt-2">
                             <span className="font-bold">{category}:</span>
                             <ul className="list-disc ml-5">
-                              {techs.map((tech, index) => (
-                                <li key={index}>{tech}</li>
-                              ))}
+                              {(Array.isArray(techs) ? techs : [techs]).map(
+                                (tech, index) => (
+                                  <li key={index}>{tech}</li>
+                                )
+                              )}
                             </ul>
                           </li>
                         )
                       )}
                     </ul>
                   </div>
+
                   <div className="mt-6 flex space-x-4">
                     <a href="#" className="text-zinc-400 hover:text-white">
                       <Github className="w-5 h-5" />
                     </a>
                     <a href="#" className="text-zinc-400 hover:text-white">
                       <FileText className="w-5 h-5" />
-                    </a>
-                    <a href="#" className="text-zinc-400 hover:text-white">
-                      {/* <ReactLogo className="w-5 h-5" /> */}
                     </a>
                   </div>
                 </div>
