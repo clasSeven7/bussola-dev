@@ -719,3 +719,12 @@ DETAIL:  Key (email)=(saulo@gmail.com) already exists.
 2024-12-02 02:38:41,940 - WARNING - Bad Request: /api/projects/
 2024-12-02 02:38:54,356 - WARNING - Bad Request: /api/projects/
 2024-12-02 02:40:50,773 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:49:27,121 - INFO - Watching for file changes with StatReloader
+2024-12-02 02:50:12,953 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:50:23,565 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:51:03,974 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:51:17,348 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:51:30,565 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:51:55,580 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:52:02,919 - WARNING - Bad Request: /api/projects/
+2024-12-02 02:52:05,999 - WARNING - Bad Request: /api/projects/

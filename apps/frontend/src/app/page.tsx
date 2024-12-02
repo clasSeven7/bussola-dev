@@ -1,9 +1,9 @@
 'use client';
 
-import ProjectCard from '@/app/components/projectCard';
+import Navbar from '@/components/navbar';
+import ProjectCard from '@/components/projectCard';
 import useAuth from '@/hooks/useAuth';
 import { useFeedProjects } from '@/hooks/useFeedProjects';
-import Navbar from './components/navbar';
 
 export default function Home() {
   useAuth(); // Verifica se o usuário está autenticado ao carregar a página

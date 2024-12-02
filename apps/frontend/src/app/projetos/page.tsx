@@ -1,5 +1,6 @@
 'use client';
 
+import Navbar from '@/components/navbar';
 import {
   Pagination,
   PaginationContent,
@@ -8,12 +9,11 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination';
-import api from '@/services/api'; // Importar API configurada
+import api from '@/services/api';
 import { CirclePlus, Eye, FileText, Github } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import Navbar from '../components/navbar';
 
 export default function Projects() {
   interface Project {

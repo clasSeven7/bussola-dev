@@ -1,10 +1,10 @@
 'use client';
 
+import Navbar from '@/components/navbar';
 import api from '@/services/api';
 import { Folder } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import Navbar from '../../components/navbar';
 
 export default function CreateProject() {
   const router = useRouter();
@@ -39,7 +39,7 @@ export default function CreateProject() {
 
   const validateTechnologies = (value: string) => {
     try {
-      JSON.parse(value); // Verifica se é um JSON válido
+      JSON.parse(value);
       setTechError('');
     } catch {
       setTechError('Formato inválido. Certifique-se de que é um JSON válido.');
