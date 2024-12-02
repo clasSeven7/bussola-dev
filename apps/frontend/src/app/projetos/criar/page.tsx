@@ -9,13 +9,19 @@ import Navbar from '../../components/navbar';
 export default function CreateProject() {
   const router = useRouter();
 
-  // Estados para armazenar os dados do projeto
+  interface User {
+    id: string;
+    name: string;
+  }
+
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [image, setImage] = useState<File | null>(null); // Ajustado para armazenar o arquivo
+  const [image, setImage] = useState<File | null>(null);
   const [technologies, setTechnologies] = useState('');
+  const [techError, setTechError] = useState('');
   const [user, setUser] = useState('');
-  const [users, setUsers] = useState<any[]>([]);
+  const [users, setUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     api
@@ -25,44 +31,73 @@ export default function CreateProject() {
         if (error.response?.status === 401) {
           alert('Sessão expirada. Faça login novamente.');
           localStorage.removeItem('token');
+        } else {
+          console.error('Erro ao carregar usuários:', error);
         }
       });
   }, []);
 
+  const validateTechnologies = (value: string) => {
+    try {
+      JSON.parse(value); // Verifica se é um JSON válido
+      setTechError('');
+    } catch {
+      setTechError('Formato inválido. Certifique-se de que é um JSON válido.');
+    }
+  };
+
   const handleSave = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     const formData = new FormData();
     formData.append('title', title);
     formData.append('description', description);
 
+    // Verifica se a imagem foi selecionada e a adiciona ao FormData
     if (image) {
-      formData.append('image', image);
+      formData.append('image', image); // Certifique-se de que 'image' é um File
     }
 
+    // Valida e adiciona o campo 'technologies' como JSON válido
     try {
       const techData = JSON.parse(technologies);
-      formData.append('technologies', JSON.stringify(techData));
-    } catch (error) {
-      console.error('Erro ao processar tecnologias:', error);
+      formData.append('technologies', JSON.stringify(techData)); // Envia como string JSON
+    } catch {
+      alert(
+        'Erro ao processar o campo Tecnologias. Certifique-se de que está no formato JSON válido.'
+      );
+      setLoading(false);
       return;
     }
-    formData.append('users', JSON.stringify([user]));
+
+    // Certifica-se de que o campo 'user' é enviado corretamente
+    if (user) {
+      formData.append('user', user); // Envia o ID do usuário selecionado
+    } else {
+      alert('Por favor, selecione um usuário.');
+      setLoading(false);
+      return;
+    }
 
     try {
-      api.post('/projects/', formData);
-      const response = await fetch('http://localhost:8000/api/projects/', {
-        method: 'POST',
-        body: formData,
+      await api.post('/projects/', formData, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`, // Cabeçalho de autenticação
+        },
       });
 
-      if (response.ok) {
-        router.push('/projetos');
+      // Redireciona após sucesso
+      router.push('/projetos');
+    } catch (error: any) {
+      if (error.response) {
+        alert(`Erro: ${error.response.data.detail || 'Falha no servidor.'}`);
       } else {
-        console.error('Erro ao salvar o projeto');
+        alert('Erro de rede. Verifique sua conexão.');
       }
-    } catch (error) {
-      console.error('Erro de conexão:', error);
+      console.error('Erro ao salvar o projeto:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -129,27 +164,35 @@ export default function CreateProject() {
             </div>
 
             <div className="mb-6">
-              <div className="flex items-center justify-left text-center mb-2">
-                <h4 className="text-lg font-semibold">Tecnologias</h4>
-              </div>
-              <div>
-                <h4 className="mb-2">Exemplo</h4>
-                <pre className="bg-zinc-900 flex items-center justify-left p-4 mb-2 border border-none rounded">
-                  <code>
-                    {
-                      '{\n  "backend": ["Django"], \n  "frontend": ["React", "TailwindCSS"]\n}'
-                    }
-                  </code>
-                </pre>
-              </div>
+              <label
+                htmlFor="technologies"
+                className="block text-lg font-semibold mb-2"
+              >
+                Tecnologias
+              </label>
+              <pre className="bg-zinc-900 p-4 mb-2 border border-none rounded text-green-500">
+                <code>
+                  {
+                    '{\n  "backend": ["Django"], \n  "frontend": ["React", "TailwindCSS"]\n}'
+                  }
+                </code>
+              </pre>
               <input
                 type="text"
                 id="technologies"
                 value={technologies}
-                onChange={(e) => setTechnologies(e.target.value)}
-                className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
+                onChange={(e) => {
+                  setTechnologies(e.target.value);
+                  validateTechnologies(e.target.value);
+                }}
+                className={`w-full p-3 rounded-md bg-zinc-800 text-white border ${
+                  techError ? 'border-red-500' : 'border-zinc-700'
+                }`}
                 required
               />
+              {techError && (
+                <p className="text-red-500 text-sm mt-1">{techError}</p>
+              )}
             </div>
 
             <div className="mb-4">
@@ -159,28 +202,33 @@ export default function CreateProject() {
               >
                 Usuário
               </label>
-              <select
-                id="user"
-                value={user}
-                onChange={(e) => setUser(e.target.value)}
-                className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
-                required
-              >
-                <option value="">Selecione um usuário</option>
-                {users.map((u) => (
-                  <option key={u.id} value={u.id}>
-                    {u.name}
-                  </option>
-                ))}
-              </select>
+              {users.length === 0 ? (
+                <p>Carregando usuários...</p>
+              ) : (
+                <select
+                  id="user"
+                  value={user}
+                  onChange={(e) => setUser(e.target.value)}
+                  className="w-full p-3 rounded-md bg-zinc-800 text-white border border-zinc-700"
+                  required
+                >
+                  <option value="">Selecione um usuário</option>
+                  {users.map((u) => (
+                    <option key={u.id} value={u.id}>
+                      {u.name}
+                    </option>
+                  ))}
+                </select>
+              )}
             </div>
 
             <div className="flex justify-between mt-6">
               <button
                 type="submit"
-                className="bg-zinc-800 text-white px-6 py-3 rounded-md hover:bg-zinc-700"
+                className="bg-zinc-800 text-white px-6 py-3 rounded-md hover:bg-zinc-700 disabled:bg-zinc-600"
+                disabled={loading}
               >
-                Salvar
+                {loading ? 'Salvando...' : 'Salvar'}
               </button>
             </div>
           </form>
