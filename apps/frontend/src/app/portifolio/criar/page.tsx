@@ -14,6 +14,7 @@ export default function CreatePortfolio() {
   const [selectedProject, setSelectedProject] = useState('');
   const [portfolioImage, setPortfolioImage] = useState<File | null>(null);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [errors, setErrors] = useState<{ user?: string; project?: string }>({});
 
   const router = useRouter();
 
@@ -37,7 +38,7 @@ export default function CreatePortfolio() {
           }),
         ]);
 
-        setUsers(usersResponse.data || []);
+        setUsers(usersResponse.data.results || []);
         setProjects(projectsResponse.data.results || []);
       } catch (error) {
         console.error('Erro ao carregar dados:', error);
@@ -63,24 +64,45 @@ export default function CreatePortfolio() {
     }
   };
 
+  const validateForm = () => {
+    const newErrors: { user?: string; project?: string } = {};
+
+    if (!selectedUser) {
+      newErrors.user = 'Você precisa selecionar um usuário.';
+    }
+
+    if (!selectedProject) {
+      newErrors.project = 'Você precisa selecionar um projeto.';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!validateForm()) {
+      return;
+    }
+
     const formData = new FormData();
-    formData.append('userId', selectedUser);
-    formData.append('projectId', selectedProject);
+    formData.append('user', selectedUser); // Nome da chave deve corresponder ao backend
+    formData.append('projects', selectedProject); // Nome da chave deve corresponder ao backend
     if (portfolioImage) formData.append('image', portfolioImage);
 
     const token = localStorage.getItem('token');
 
     try {
-      await api.post('/portfolios', formData, {
+      await api.post('/portfolios/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`,
         },
       });
+
       alert('Portfólio criado com sucesso!');
+      router.push('/portifolio/'); // Redireciona para a página de portfólio
     } catch (error) {
       alert('Erro ao criar portfólio.');
       console.error(error);
@@ -118,6 +140,9 @@ export default function CreatePortfolio() {
                 <option disabled>Nenhum usuário encontrado</option>
               )}
             </select>
+            {errors.user && (
+              <p className="text-red-500 text-sm mt-1">{errors.user}</p>
+            )}
           </div>
 
           {/* Foto do Portfólio */}
@@ -129,6 +154,8 @@ export default function CreatePortfolio() {
               <div className="mb-2">
                 <Image
                   src={imagePreview}
+                  width={200}
+                  height={200}
                   alt="Pré-visualização da imagem"
                   className="w-full h-auto max-w-xs object-cover"
                 />
@@ -164,6 +191,9 @@ export default function CreatePortfolio() {
                 <option disabled>Nenhum projeto encontrado</option>
               )}
             </select>
+            {errors.project && (
+              <p className="text-red-500 text-sm mt-1">{errors.project}</p>
+            )}
           </div>
 
           {/* Botão para Criar Novo Projeto */}

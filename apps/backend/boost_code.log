@@ -2076,3 +2076,683 @@ RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash
 2024-12-03 18:16:26,286 - WARNING - Not Found: /media/project/manguecapa.png
 2024-12-03 18:16:26,288 - WARNING - Not Found: /media/project/scrum.png
 2024-12-03 18:16:26,290 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 18:26:21,627 - INFO - Watching for file changes with StatReloader
+2024-12-03 18:26:32,720 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 18:26:32,721 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 18:26:32,725 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 18:45:29,882 - WARNING - Unauthorized: /api/users/
+2024-12-03 18:45:29,884 - WARNING - Unauthorized: /api/projects/
+2024-12-03 18:45:29,897 - WARNING - Unauthorized: /api/users/
+2024-12-03 18:45:29,899 - WARNING - Unauthorized: /api/projects/
+2024-12-03 18:45:38,029 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 18:45:38,030 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 18:45:38,031 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 18:48:45,705 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 18:48:45,711 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 18:48:45,713 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 18:48:55,959 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 18:48:55,960 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 18:48:55,960 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 18:48:55,960 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 18:48:55,960 - DEBUG - Importing BlpImagePlugin
+2024-12-03 18:48:55,961 - DEBUG - Importing BmpImagePlugin
+2024-12-03 18:48:55,961 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 18:48:55,961 - DEBUG - Importing CurImagePlugin
+2024-12-03 18:48:55,962 - DEBUG - Importing DcxImagePlugin
+2024-12-03 18:48:55,962 - DEBUG - Importing DdsImagePlugin
+2024-12-03 18:48:55,965 - DEBUG - Importing EpsImagePlugin
+2024-12-03 18:48:55,966 - DEBUG - Importing FitsImagePlugin
+2024-12-03 18:48:55,966 - DEBUG - Importing FliImagePlugin
+2024-12-03 18:48:55,967 - DEBUG - Importing FpxImagePlugin
+2024-12-03 18:48:55,968 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 18:48:55,968 - DEBUG - Importing FtexImagePlugin
+2024-12-03 18:48:55,968 - DEBUG - Importing GbrImagePlugin
+2024-12-03 18:48:55,969 - DEBUG - Importing GifImagePlugin
+2024-12-03 18:48:55,969 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 18:48:55,969 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 18:48:55,969 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 18:48:55,971 - DEBUG - Importing IcoImagePlugin
+2024-12-03 18:48:55,974 - DEBUG - Importing ImImagePlugin
+2024-12-03 18:48:55,975 - DEBUG - Importing ImtImagePlugin
+2024-12-03 18:48:55,976 - DEBUG - Importing IptcImagePlugin
+2024-12-03 18:48:55,976 - DEBUG - Importing JpegImagePlugin
+2024-12-03 18:48:55,976 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 18:48:55,976 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 18:48:55,976 - DEBUG - Importing MicImagePlugin
+2024-12-03 18:48:55,977 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 18:48:55,977 - DEBUG - Importing MpegImagePlugin
+2024-12-03 18:48:55,977 - DEBUG - Importing MpoImagePlugin
+2024-12-03 18:48:55,980 - DEBUG - Importing MspImagePlugin
+2024-12-03 18:48:55,981 - DEBUG - Importing PalmImagePlugin
+2024-12-03 18:48:55,982 - DEBUG - Importing PcdImagePlugin
+2024-12-03 18:48:55,982 - DEBUG - Importing PcxImagePlugin
+2024-12-03 18:48:55,982 - DEBUG - Importing PdfImagePlugin
+2024-12-03 18:48:55,990 - DEBUG - Importing PixarImagePlugin
+2024-12-03 18:48:55,991 - DEBUG - Importing PngImagePlugin
+2024-12-03 18:48:55,991 - DEBUG - Importing PpmImagePlugin
+2024-12-03 18:48:55,991 - DEBUG - Importing PsdImagePlugin
+2024-12-03 18:48:55,992 - DEBUG - Importing QoiImagePlugin
+2024-12-03 18:48:55,994 - DEBUG - Importing SgiImagePlugin
+2024-12-03 18:48:55,995 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 18:48:55,997 - DEBUG - Importing SunImagePlugin
+2024-12-03 18:48:55,998 - DEBUG - Importing TgaImagePlugin
+2024-12-03 18:48:55,999 - DEBUG - Importing TiffImagePlugin
+2024-12-03 18:48:55,999 - DEBUG - Importing WebPImagePlugin
+2024-12-03 18:48:56,003 - DEBUG - Importing WmfImagePlugin
+2024-12-03 18:48:56,003 - DEBUG - Importing XbmImagePlugin
+2024-12-03 18:48:56,005 - DEBUG - Importing XpmImagePlugin
+2024-12-03 18:48:56,006 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 18:48:56,008 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 18:49:00,581 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 18:49:00,581 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 18:49:00,581 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 18:49:00,581 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 18:49:00,583 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 18:51:29,134 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 18:51:29,465 - INFO - Watching for file changes with StatReloader
+2024-12-03 18:51:45,835 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 18:51:46,117 - INFO - Watching for file changes with StatReloader
+2024-12-03 18:51:48,267 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 18:51:48,556 - INFO - Watching for file changes with StatReloader
+2024-12-03 18:52:19,931 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 18:52:19,931 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 18:52:19,931 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 18:52:19,931 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 18:52:19,931 - DEBUG - Importing BlpImagePlugin
+2024-12-03 18:52:19,932 - DEBUG - Importing BmpImagePlugin
+2024-12-03 18:52:19,932 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 18:52:19,932 - DEBUG - Importing CurImagePlugin
+2024-12-03 18:52:19,932 - DEBUG - Importing DcxImagePlugin
+2024-12-03 18:52:19,933 - DEBUG - Importing DdsImagePlugin
+2024-12-03 18:52:19,947 - DEBUG - Importing EpsImagePlugin
+2024-12-03 18:52:19,949 - DEBUG - Importing FitsImagePlugin
+2024-12-03 18:52:19,950 - DEBUG - Importing FliImagePlugin
+2024-12-03 18:52:19,952 - DEBUG - Importing FpxImagePlugin
+2024-12-03 18:52:19,953 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 18:52:19,954 - DEBUG - Importing FtexImagePlugin
+2024-12-03 18:52:19,955 - DEBUG - Importing GbrImagePlugin
+2024-12-03 18:52:19,958 - DEBUG - Importing GifImagePlugin
+2024-12-03 18:52:19,958 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 18:52:19,959 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 18:52:19,960 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 18:52:19,963 - DEBUG - Importing IcoImagePlugin
+2024-12-03 18:52:19,966 - DEBUG - Importing ImImagePlugin
+2024-12-03 18:52:19,967 - DEBUG - Importing ImtImagePlugin
+2024-12-03 18:52:19,968 - DEBUG - Importing IptcImagePlugin
+2024-12-03 18:52:19,969 - DEBUG - Importing JpegImagePlugin
+2024-12-03 18:52:19,969 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 18:52:19,969 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 18:52:19,970 - DEBUG - Importing MicImagePlugin
+2024-12-03 18:52:19,971 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 18:52:19,971 - DEBUG - Importing MpegImagePlugin
+2024-12-03 18:52:19,972 - DEBUG - Importing MpoImagePlugin
+2024-12-03 18:52:19,978 - DEBUG - Importing MspImagePlugin
+2024-12-03 18:52:19,979 - DEBUG - Importing PalmImagePlugin
+2024-12-03 18:52:19,980 - DEBUG - Importing PcdImagePlugin
+2024-12-03 18:52:19,980 - DEBUG - Importing PcxImagePlugin
+2024-12-03 18:52:19,980 - DEBUG - Importing PdfImagePlugin
+2024-12-03 18:52:19,986 - DEBUG - Importing PixarImagePlugin
+2024-12-03 18:52:19,987 - DEBUG - Importing PngImagePlugin
+2024-12-03 18:52:19,987 - DEBUG - Importing PpmImagePlugin
+2024-12-03 18:52:19,987 - DEBUG - Importing PsdImagePlugin
+2024-12-03 18:52:19,988 - DEBUG - Importing QoiImagePlugin
+2024-12-03 18:52:19,988 - DEBUG - Importing SgiImagePlugin
+2024-12-03 18:52:19,989 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 18:52:19,989 - DEBUG - Importing SunImagePlugin
+2024-12-03 18:52:19,989 - DEBUG - Importing TgaImagePlugin
+2024-12-03 18:52:19,990 - DEBUG - Importing TiffImagePlugin
+2024-12-03 18:52:19,990 - DEBUG - Importing WebPImagePlugin
+2024-12-03 18:52:19,991 - DEBUG - Importing WmfImagePlugin
+2024-12-03 18:52:19,991 - DEBUG - Importing XbmImagePlugin
+2024-12-03 18:52:19,992 - DEBUG - Importing XpmImagePlugin
+2024-12-03 18:52:19,992 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 19:01:31,545 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:01:31,546 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:01:31,547 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:04:10,126 - WARNING - Unauthorized: /api/portfolios/
+2024-12-03 19:04:19,588 - WARNING - Unauthorized: /api/portfolios/
+2024-12-03 19:04:27,879 - WARNING - Unauthorized: /api/portfolios/
+2024-12-03 19:04:41,738 - WARNING - Unauthorized: /api/portfolios/
+2024-12-03 19:04:46,759 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:04:52,977 - WARNING - Unauthorized: /api/portfolios/
+2024-12-03 19:05:03,194 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:05:03,196 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:05:03,197 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:07:07,949 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:07:07,954 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:07:07,955 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:07:07,957 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:07:07,958 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:07:07,961 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:07:08,081 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:07:08,087 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:07:08,091 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:07:08,093 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:07:08,289 - WARNING - Not Found: /favicon.ico
+2024-12-03 19:07:20,536 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:07:21,024 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:07:21,737 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:07:21,739 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:07:21,742 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:07:21,752 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:07:21,755 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:07:21,757 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:07:21,790 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:07:21,791 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:07:21,792 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:07:22,773 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:07:22,774 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:07:22,775 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:07:22,776 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:07:22,777 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:07:22,778 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:07:22,800 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:07:25,364 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:07:25,730 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:09:03,840 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:09:03,841 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:09:03,842 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:10:08,555 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:22,055 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:22,063 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:33,697 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:39,010 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:43,632 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:10:43,650 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:11:46,989 - WARNING - Not Found: /media/portfolio/preview.png
+2024-12-03 19:12:02,934 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 19:12:02,934 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 19:12:02,934 - DEBUG - STREAM b'sRGB' 62 1
+2024-12-03 19:12:02,934 - DEBUG - STREAM b'gAMA' 75 4
+2024-12-03 19:12:02,934 - DEBUG - STREAM b'IDAT' 91 21811
+2024-12-03 19:12:02,935 - DEBUG - Importing BlpImagePlugin
+2024-12-03 19:12:02,937 - DEBUG - Importing BmpImagePlugin
+2024-12-03 19:12:02,937 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 19:12:02,938 - DEBUG - Importing CurImagePlugin
+2024-12-03 19:12:02,938 - DEBUG - Importing DcxImagePlugin
+2024-12-03 19:12:02,939 - DEBUG - Importing DdsImagePlugin
+2024-12-03 19:12:02,945 - DEBUG - Importing EpsImagePlugin
+2024-12-03 19:12:02,946 - DEBUG - Importing FitsImagePlugin
+2024-12-03 19:12:02,947 - DEBUG - Importing FliImagePlugin
+2024-12-03 19:12:02,947 - DEBUG - Importing FpxImagePlugin
+2024-12-03 19:12:02,948 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 19:12:02,948 - DEBUG - Importing FtexImagePlugin
+2024-12-03 19:12:02,949 - DEBUG - Importing GbrImagePlugin
+2024-12-03 19:12:02,950 - DEBUG - Importing GifImagePlugin
+2024-12-03 19:12:02,950 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 19:12:02,950 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 19:12:02,951 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 19:12:02,954 - DEBUG - Importing IcoImagePlugin
+2024-12-03 19:12:02,956 - DEBUG - Importing ImImagePlugin
+2024-12-03 19:12:02,957 - DEBUG - Importing ImtImagePlugin
+2024-12-03 19:12:02,958 - DEBUG - Importing IptcImagePlugin
+2024-12-03 19:12:02,958 - DEBUG - Importing JpegImagePlugin
+2024-12-03 19:12:02,959 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 19:12:02,959 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 19:12:02,959 - DEBUG - Importing MicImagePlugin
+2024-12-03 19:12:02,960 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 19:12:02,960 - DEBUG - Importing MpegImagePlugin
+2024-12-03 19:12:02,961 - DEBUG - Importing MpoImagePlugin
+2024-12-03 19:12:02,966 - DEBUG - Importing MspImagePlugin
+2024-12-03 19:12:02,967 - DEBUG - Importing PalmImagePlugin
+2024-12-03 19:12:02,968 - DEBUG - Importing PcdImagePlugin
+2024-12-03 19:12:02,969 - DEBUG - Importing PcxImagePlugin
+2024-12-03 19:12:02,969 - DEBUG - Importing PdfImagePlugin
+2024-12-03 19:12:02,976 - DEBUG - Importing PixarImagePlugin
+2024-12-03 19:12:02,977 - DEBUG - Importing PngImagePlugin
+2024-12-03 19:12:02,977 - DEBUG - Importing PpmImagePlugin
+2024-12-03 19:12:02,977 - DEBUG - Importing PsdImagePlugin
+2024-12-03 19:12:02,978 - DEBUG - Importing QoiImagePlugin
+2024-12-03 19:12:02,979 - DEBUG - Importing SgiImagePlugin
+2024-12-03 19:12:02,979 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 19:12:02,979 - DEBUG - Importing SunImagePlugin
+2024-12-03 19:12:02,980 - DEBUG - Importing TgaImagePlugin
+2024-12-03 19:12:02,980 - DEBUG - Importing TiffImagePlugin
+2024-12-03 19:12:02,980 - DEBUG - Importing WebPImagePlugin
+2024-12-03 19:12:02,981 - DEBUG - Importing WmfImagePlugin
+2024-12-03 19:12:02,982 - DEBUG - Importing XbmImagePlugin
+2024-12-03 19:12:02,983 - DEBUG - Importing XpmImagePlugin
+2024-12-03 19:12:02,984 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 19:12:02,993 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 19:12:48,662 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/app/models.py changed, reloading.
+2024-12-03 19:12:48,965 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:20:09,314 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:27:15,158 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:27:31,842 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:27:31,852 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:27:31,853 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:27:35,269 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:27:35,271 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:27:35,273 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:27:53,347 - DEBUG - Importing BlpImagePlugin
+2024-12-03 19:27:53,348 - DEBUG - Importing BmpImagePlugin
+2024-12-03 19:27:53,348 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 19:27:53,348 - DEBUG - Importing CurImagePlugin
+2024-12-03 19:27:53,348 - DEBUG - Importing DcxImagePlugin
+2024-12-03 19:27:53,348 - DEBUG - Importing DdsImagePlugin
+2024-12-03 19:27:53,350 - DEBUG - Importing EpsImagePlugin
+2024-12-03 19:27:53,350 - DEBUG - Importing FitsImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Importing FliImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Importing FpxImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 19:27:53,351 - DEBUG - Importing FtexImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Importing GbrImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Importing GifImagePlugin
+2024-12-03 19:27:53,351 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 19:27:53,352 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 19:27:53,352 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 19:27:53,352 - DEBUG - Importing IcoImagePlugin
+2024-12-03 19:27:53,353 - DEBUG - Importing ImImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing ImtImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing IptcImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing JpegImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 19:27:53,354 - DEBUG - Importing MicImagePlugin
+2024-12-03 19:27:53,355 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 19:27:53,355 - DEBUG - Importing MpegImagePlugin
+2024-12-03 19:27:53,355 - DEBUG - Importing MpoImagePlugin
+2024-12-03 19:27:53,357 - DEBUG - Importing MspImagePlugin
+2024-12-03 19:27:53,357 - DEBUG - Importing PalmImagePlugin
+2024-12-03 19:27:53,357 - DEBUG - Importing PcdImagePlugin
+2024-12-03 19:27:53,358 - DEBUG - Importing PcxImagePlugin
+2024-12-03 19:27:53,358 - DEBUG - Importing PdfImagePlugin
+2024-12-03 19:27:53,360 - DEBUG - Importing PixarImagePlugin
+2024-12-03 19:27:53,361 - DEBUG - Importing PngImagePlugin
+2024-12-03 19:27:53,361 - DEBUG - Importing PpmImagePlugin
+2024-12-03 19:27:53,361 - DEBUG - Importing PsdImagePlugin
+2024-12-03 19:27:53,361 - DEBUG - Importing QoiImagePlugin
+2024-12-03 19:27:53,362 - DEBUG - Importing SgiImagePlugin
+2024-12-03 19:27:53,362 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 19:27:53,363 - DEBUG - Importing SunImagePlugin
+2024-12-03 19:27:53,363 - DEBUG - Importing TgaImagePlugin
+2024-12-03 19:27:53,363 - DEBUG - Importing TiffImagePlugin
+2024-12-03 19:27:53,363 - DEBUG - Importing WebPImagePlugin
+2024-12-03 19:27:53,364 - DEBUG - Importing WmfImagePlugin
+2024-12-03 19:27:53,365 - DEBUG - Importing XbmImagePlugin
+2024-12-03 19:27:53,365 - DEBUG - Importing XpmImagePlugin
+2024-12-03 19:27:53,365 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 19:27:55,935 - WARNING - Not Found: /media/project/WhatsApp_Image_2023-05-29_at_14.51.11.jpeg
+2024-12-03 19:28:35,603 - WARNING - Not Found: /media/project/WhatsApp_Image_2023-05-29_at_14.51.11.jpeg
+2024-12-03 19:28:35,604 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_9.jpg
+2024-12-03 19:28:58,782 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:28:58,789 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:28:58,799 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:29:03,802 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 19:29:03,802 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:29:20,949 - WARNING - Not Found: /media/project/WhatsApp_Image_2023-05-29_at_14.51.11.jpeg
+2024-12-03 19:29:23,748 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_9.jpg
+2024-12-03 19:29:25,119 - WARNING - Not Found: /media/project/WhatsApp_Image_2023-05-29_at_14.51.11.jpeg
+2024-12-03 19:29:25,130 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 19:29:25,137 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 19:29:27,753 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_9.jpg
+2024-12-03 19:43:26,307 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:43:36,015 - WARNING - Unauthorized: /api/projects/
+2024-12-03 19:43:42,378 - WARNING - Unauthorized: /api/users/
+2024-12-03 19:43:42,391 - WARNING - Unauthorized: /api/users/
+2024-12-03 19:43:48,163 - WARNING - Unauthorized: /api/users/
+2024-12-03 19:43:53,555 - WARNING - Unauthorized: /api/token/
+2024-12-03 19:44:08,308 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:44:08,321 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:44:08,322 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:44:08,323 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:44:08,326 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:44:08,329 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:44:08,426 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:44:08,428 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:44:08,430 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:44:08,433 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:44:08,570 - WARNING - Not Found: /favicon.ico
+2024-12-03 19:45:31,894 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:46:36,705 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:46:36,707 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:46:36,708 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:46:36,710 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:46:36,711 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:46:36,713 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:46:36,728 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:46:36,730 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:46:36,730 - WARNING - Not Found: /static/admin/css/dashboard.css
+2024-12-03 19:46:36,731 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:46:39,260 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:46:39,261 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:46:39,262 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:46:39,262 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:46:39,265 - WARNING - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-12-03 19:46:39,273 - WARNING - Not Found: /static/admin/css/forms.css
+2024-12-03 19:46:39,275 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:46:39,276 - WARNING - Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2024-12-03 19:46:39,276 - WARNING - Not Found: /static/admin/js/jquery.init.js
+2024-12-03 19:46:39,277 - WARNING - Not Found: /static/admin/js/core.js
+2024-12-03 19:46:39,286 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:46:39,327 - WARNING - Not Found: /static/admin/js/actions.js
+2024-12-03 19:46:39,329 - WARNING - Not Found: /static/admin/js/urlify.js
+2024-12-03 19:46:39,330 - WARNING - Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-12-03 19:46:39,331 - WARNING - Not Found: /static/admin/js/prepopulate_init.js
+2024-12-03 19:46:39,332 - WARNING - Not Found: /static/admin/js/prepopulate.js
+2024-12-03 19:46:39,382 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:46:39,383 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:46:39,384 - WARNING - Not Found: /static/admin/js/change_form.js
+2024-12-03 19:47:04,851 - DEBUG - Importing BlpImagePlugin
+2024-12-03 19:47:04,852 - DEBUG - Importing BmpImagePlugin
+2024-12-03 19:47:04,852 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 19:47:04,852 - DEBUG - Importing CurImagePlugin
+2024-12-03 19:47:04,852 - DEBUG - Importing DcxImagePlugin
+2024-12-03 19:47:04,852 - DEBUG - Importing DdsImagePlugin
+2024-12-03 19:47:04,857 - DEBUG - Importing EpsImagePlugin
+2024-12-03 19:47:04,859 - DEBUG - Importing FitsImagePlugin
+2024-12-03 19:47:04,860 - DEBUG - Importing FliImagePlugin
+2024-12-03 19:47:04,860 - DEBUG - Importing FpxImagePlugin
+2024-12-03 19:47:04,861 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 19:47:04,861 - DEBUG - Importing FtexImagePlugin
+2024-12-03 19:47:04,861 - DEBUG - Importing GbrImagePlugin
+2024-12-03 19:47:04,862 - DEBUG - Importing GifImagePlugin
+2024-12-03 19:47:04,862 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 19:47:04,862 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 19:47:04,863 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 19:47:04,865 - DEBUG - Importing IcoImagePlugin
+2024-12-03 19:47:04,865 - DEBUG - Importing ImImagePlugin
+2024-12-03 19:47:04,866 - DEBUG - Importing ImtImagePlugin
+2024-12-03 19:47:04,866 - DEBUG - Importing IptcImagePlugin
+2024-12-03 19:47:04,866 - DEBUG - Importing JpegImagePlugin
+2024-12-03 19:47:04,867 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 19:47:04,867 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 19:47:04,867 - DEBUG - Importing MicImagePlugin
+2024-12-03 19:47:04,867 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 19:47:04,867 - DEBUG - Importing MpegImagePlugin
+2024-12-03 19:47:04,867 - DEBUG - Importing MpoImagePlugin
+2024-12-03 19:47:04,870 - DEBUG - Importing MspImagePlugin
+2024-12-03 19:47:04,871 - DEBUG - Importing PalmImagePlugin
+2024-12-03 19:47:04,871 - DEBUG - Importing PcdImagePlugin
+2024-12-03 19:47:04,872 - DEBUG - Importing PcxImagePlugin
+2024-12-03 19:47:04,872 - DEBUG - Importing PdfImagePlugin
+2024-12-03 19:47:04,876 - DEBUG - Importing PixarImagePlugin
+2024-12-03 19:47:04,876 - DEBUG - Importing PngImagePlugin
+2024-12-03 19:47:04,876 - DEBUG - Importing PpmImagePlugin
+2024-12-03 19:47:04,876 - DEBUG - Importing PsdImagePlugin
+2024-12-03 19:47:04,877 - DEBUG - Importing QoiImagePlugin
+2024-12-03 19:47:04,877 - DEBUG - Importing SgiImagePlugin
+2024-12-03 19:47:04,877 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 19:47:04,877 - DEBUG - Importing SunImagePlugin
+2024-12-03 19:47:04,878 - DEBUG - Importing TgaImagePlugin
+2024-12-03 19:47:04,878 - DEBUG - Importing TiffImagePlugin
+2024-12-03 19:47:04,878 - DEBUG - Importing WebPImagePlugin
+2024-12-03 19:47:04,879 - DEBUG - Importing WmfImagePlugin
+2024-12-03 19:47:04,880 - DEBUG - Importing XbmImagePlugin
+2024-12-03 19:47:04,880 - DEBUG - Importing XpmImagePlugin
+2024-12-03 19:47:04,880 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 19:47:05,049 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:47:05,051 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:47:05,054 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:47:05,055 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:47:05,059 - WARNING - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-12-03 19:47:05,066 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:47:05,070 - WARNING - Not Found: /static/admin/css/changelists.css
+2024-12-03 19:47:05,072 - WARNING - Not Found: /static/admin/js/jquery.init.js
+2024-12-03 19:47:05,074 - WARNING - Not Found: /static/admin/js/core.js
+2024-12-03 19:47:05,076 - WARNING - Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2024-12-03 19:47:05,087 - WARNING - Not Found: /static/admin/js/actions.js
+2024-12-03 19:47:05,112 - WARNING - Not Found: /static/admin/js/urlify.js
+2024-12-03 19:47:05,122 - WARNING - Not Found: /static/admin/js/prepopulate.js
+2024-12-03 19:47:05,123 - WARNING - Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-12-03 19:47:05,169 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:47:05,170 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:47:05,171 - WARNING - Not Found: /static/admin/js/filters.js
+2024-12-03 19:47:07,722 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:47:07,724 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:47:07,725 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:47:07,726 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:47:07,727 - WARNING - Not Found: /static/admin/css/changelists.css
+2024-12-03 19:47:07,738 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:47:07,739 - WARNING - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-12-03 19:47:07,745 - WARNING - Not Found: /static/admin/js/jquery.init.js
+2024-12-03 19:47:07,745 - WARNING - Not Found: /static/admin/js/core.js
+2024-12-03 19:47:07,747 - WARNING - Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2024-12-03 19:47:07,760 - WARNING - Not Found: /static/admin/js/actions.js
+2024-12-03 19:47:07,784 - WARNING - Not Found: /static/admin/js/urlify.js
+2024-12-03 19:47:07,784 - WARNING - Not Found: /static/admin/js/prepopulate.js
+2024-12-03 19:47:07,791 - WARNING - Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-12-03 19:47:07,843 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:47:07,847 - WARNING - Not Found: /static/admin/js/filters.js
+2024-12-03 19:47:07,848 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:47:30,196 - WARNING - Not Found: /media/project/wallpaper-ubuntu.jpg
+2024-12-03 19:47:47,904 - WARNING - Not Found: /media/project/wallpaper-ubuntu.jpg
+2024-12-03 19:50:42,169 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:50:42,532 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:50:43,707 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:50:43,989 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:51:48,276 - WARNING - Not Found: /media/project/wallpaper-ubuntu.jpg
+2024-12-03 19:52:37,879 - DEBUG - Importing BlpImagePlugin
+2024-12-03 19:52:37,880 - DEBUG - Importing BmpImagePlugin
+2024-12-03 19:52:37,880 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 19:52:37,881 - DEBUG - Importing CurImagePlugin
+2024-12-03 19:52:37,881 - DEBUG - Importing DcxImagePlugin
+2024-12-03 19:52:37,881 - DEBUG - Importing DdsImagePlugin
+2024-12-03 19:52:37,883 - DEBUG - Importing EpsImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Importing FitsImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Importing FliImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Importing FpxImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 19:52:37,884 - DEBUG - Importing FtexImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Importing GbrImagePlugin
+2024-12-03 19:52:37,884 - DEBUG - Importing GifImagePlugin
+2024-12-03 19:52:37,885 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 19:52:37,885 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 19:52:37,885 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 19:52:37,885 - DEBUG - Importing IcoImagePlugin
+2024-12-03 19:52:37,886 - DEBUG - Importing ImImagePlugin
+2024-12-03 19:52:37,886 - DEBUG - Importing ImtImagePlugin
+2024-12-03 19:52:37,886 - DEBUG - Importing IptcImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Importing JpegImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Importing MicImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 19:52:37,887 - DEBUG - Importing MpegImagePlugin
+2024-12-03 19:52:37,887 - DEBUG - Importing MpoImagePlugin
+2024-12-03 19:52:37,889 - DEBUG - Importing MspImagePlugin
+2024-12-03 19:52:37,889 - DEBUG - Importing PalmImagePlugin
+2024-12-03 19:52:37,889 - DEBUG - Importing PcdImagePlugin
+2024-12-03 19:52:37,890 - DEBUG - Importing PcxImagePlugin
+2024-12-03 19:52:37,890 - DEBUG - Importing PdfImagePlugin
+2024-12-03 19:52:37,893 - DEBUG - Importing PixarImagePlugin
+2024-12-03 19:52:37,893 - DEBUG - Importing PngImagePlugin
+2024-12-03 19:52:37,893 - DEBUG - Importing PpmImagePlugin
+2024-12-03 19:52:37,893 - DEBUG - Importing PsdImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing QoiImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing SgiImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing SunImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing TgaImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing TiffImagePlugin
+2024-12-03 19:52:37,894 - DEBUG - Importing WebPImagePlugin
+2024-12-03 19:52:37,895 - DEBUG - Importing WmfImagePlugin
+2024-12-03 19:52:37,895 - DEBUG - Importing XbmImagePlugin
+2024-12-03 19:52:37,896 - DEBUG - Importing XpmImagePlugin
+2024-12-03 19:52:37,896 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 19:52:39,034 - WARNING - Not Found: /media/project/wallpaper-ubuntu.jpg
+2024-12-03 19:52:49,719 - WARNING - Not Found: /media/project/wallpaper-ubuntu.jpg
+2024-12-03 19:54:58,242 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:54:58,544 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:55:03,123 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:55:03,126 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:03,128 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:55:03,130 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:55:03,131 - WARNING - Not Found: /static/admin/css/changelists.css
+2024-12-03 19:55:03,133 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:55:03,134 - WARNING - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2024-12-03 19:55:03,138 - WARNING - Not Found: /static/admin/js/jquery.init.js
+2024-12-03 19:55:03,145 - WARNING - Not Found: /static/admin/js/core.js
+2024-12-03 19:55:03,146 - WARNING - Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2024-12-03 19:55:03,154 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:03,177 - WARNING - Not Found: /static/admin/css/changelists.css
+2024-12-03 19:55:03,187 - WARNING - Not Found: /static/admin/js/actions.js
+2024-12-03 19:55:03,188 - WARNING - Not Found: /static/admin/js/urlify.js
+2024-12-03 19:55:03,191 - WARNING - Not Found: /static/admin/js/prepopulate.js
+2024-12-03 19:55:03,193 - WARNING - Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2024-12-03 19:55:03,246 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:55:03,246 - WARNING - Not Found: /static/admin/js/filters.js
+2024-12-03 19:55:03,248 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:55:25,318 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:55:25,320 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:55:25,321 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:25,323 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:55:25,324 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:55:25,327 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:55:25,421 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:55:25,422 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:25,423 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:55:25,423 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:55:41,448 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:55:41,729 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:55:44,757 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:55:44,761 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:55:44,762 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:44,763 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:55:44,765 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:55:44,766 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:55:44,779 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:55:44,780 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:55:44,781 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:55:44,782 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:57:06,504 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:57:08,575 - WARNING - Not Found: /
+2024-12-03 19:57:13,702 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:57:13,717 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:57:13,719 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:57:13,721 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:57:13,722 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:57:13,724 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:57:13,734 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:57:13,769 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:57:13,770 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:57:13,771 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:57:57,523 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:57:57,795 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:58:01,896 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:58:01,902 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:58:01,904 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:58:01,906 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:58:01,906 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:58:01,907 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:58:01,928 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:58:01,929 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:58:01,930 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:58:02,711 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:58:02,716 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:58:02,718 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:58:02,719 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:58:02,721 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:58:02,722 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:58:02,756 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:58:02,757 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:58:03,051 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:58:03,052 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:58:03,053 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:58:03,054 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:58:03,055 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:58:03,056 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:58:03,077 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:58:03,250 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:58:03,252 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:58:03,254 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:58:03,255 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:58:03,256 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:58:03,257 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:58:03,273 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:59:40,476 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:59:40,745 - INFO - Watching for file changes with StatReloader
+2024-12-03 19:59:43,495 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:59:43,495 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:59:43,497 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:43,498 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:43,499 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:43,500 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:59:43,530 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:59:43,532 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:43,533 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:43,534 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:44,265 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:59:44,266 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:59:44,267 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:59:44,268 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,269 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:44,269 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:44,301 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,302 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:59:44,467 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:59:44,468 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:59:44,470 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:59:44,472 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,473 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:44,475 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:44,525 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:59:44,526 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,527 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:44,528 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:44,840 - WARNING - Not Found: /static/admin/css/base.css
+2024-12-03 19:59:44,841 - WARNING - Not Found: /static/admin/css/dark_mode.css
+2024-12-03 19:59:44,842 - WARNING - Not Found: /static/admin/js/theme.js
+2024-12-03 19:59:44,843 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,844 - WARNING - Not Found: /static/admin/css/login.css
+2024-12-03 19:59:44,845 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:44,889 - WARNING - Not Found: /static/admin/js/nav_sidebar.js
+2024-12-03 19:59:44,890 - WARNING - Not Found: /static/admin/css/nav_sidebar.css
+2024-12-03 19:59:44,891 - WARNING - Not Found: /static/admin/css/responsive.css
+2024-12-03 19:59:51,080 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 19:59:51,350 - INFO - Watching for file changes with StatReloader
+2024-12-03 20:00:54,488 - INFO - /home/saulojustiniano/www/classeven/bussola-dev/apps/backend/backend/settings.py changed, reloading.
+2024-12-03 20:01:12,470 - INFO - Watching for file changes with StatReloader
+2024-12-03 20:01:34,972 - WARNING - Unauthorized: /api/projects/
+2024-12-03 20:02:28,104 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 20:02:28,104 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 20:02:28,104 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 20:02:28,104 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 20:02:28,104 - DEBUG - Importing BlpImagePlugin
+2024-12-03 20:02:28,105 - DEBUG - Importing BmpImagePlugin
+2024-12-03 20:02:28,105 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 20:02:28,105 - DEBUG - Importing CurImagePlugin
+2024-12-03 20:02:28,106 - DEBUG - Importing DcxImagePlugin
+2024-12-03 20:02:28,106 - DEBUG - Importing DdsImagePlugin
+2024-12-03 20:02:28,108 - DEBUG - Importing EpsImagePlugin
+2024-12-03 20:02:28,108 - DEBUG - Importing FitsImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Importing FliImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Importing FpxImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 20:02:28,109 - DEBUG - Importing FtexImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Importing GbrImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Importing GifImagePlugin
+2024-12-03 20:02:28,109 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 20:02:28,110 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 20:02:28,110 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 20:02:28,111 - DEBUG - Importing IcoImagePlugin
+2024-12-03 20:02:28,111 - DEBUG - Importing ImImagePlugin
+2024-12-03 20:02:28,111 - DEBUG - Importing ImtImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing IptcImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing JpegImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing MicImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 20:02:28,112 - DEBUG - Importing MpegImagePlugin
+2024-12-03 20:02:28,112 - DEBUG - Importing MpoImagePlugin
+2024-12-03 20:02:28,114 - DEBUG - Importing MspImagePlugin
+2024-12-03 20:02:28,114 - DEBUG - Importing PalmImagePlugin
+2024-12-03 20:02:28,115 - DEBUG - Importing PcdImagePlugin
+2024-12-03 20:02:28,115 - DEBUG - Importing PcxImagePlugin
+2024-12-03 20:02:28,115 - DEBUG - Importing PdfImagePlugin
+2024-12-03 20:02:28,118 - DEBUG - Importing PixarImagePlugin
+2024-12-03 20:02:28,118 - DEBUG - Importing PngImagePlugin
+2024-12-03 20:02:28,118 - DEBUG - Importing PpmImagePlugin
+2024-12-03 20:02:28,118 - DEBUG - Importing PsdImagePlugin
+2024-12-03 20:02:28,119 - DEBUG - Importing QoiImagePlugin
+2024-12-03 20:02:28,119 - DEBUG - Importing SgiImagePlugin
+2024-12-03 20:02:28,119 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 20:02:28,119 - DEBUG - Importing SunImagePlugin
+2024-12-03 20:02:28,120 - DEBUG - Importing TgaImagePlugin
+2024-12-03 20:02:28,120 - DEBUG - Importing TiffImagePlugin
+2024-12-03 20:02:28,120 - DEBUG - Importing WebPImagePlugin
+2024-12-03 20:02:28,121 - DEBUG - Importing WmfImagePlugin
+2024-12-03 20:02:28,121 - DEBUG - Importing XbmImagePlugin
+2024-12-03 20:02:28,122 - DEBUG - Importing XpmImagePlugin
+2024-12-03 20:02:28,122 - DEBUG - Importing XVThumbImagePlugin

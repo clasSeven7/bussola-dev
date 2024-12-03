@@ -18,7 +18,7 @@ SECRET_KEY = os.environ.get('DB_SECRET_KEY')
 #     cast=str,
 #     default="oq27ht#!we5t-f+4uohp^h#22aw#zj5=n*&q9w&j$z6#-o"
 # )
-DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
+DEBUG = True
 
 CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = ['*']
@@ -129,13 +129,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_ROOT = BASE_DIR / 'static'
-STATIC_URL = 'static/'
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -153,12 +153,11 @@ REST_FRAMEWORK = {
 
 SIMPLE_JWT = {
     # Ajuste conforme necessário
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),     # Permite renovar o token
-    # Gera um novo refresh ao usá-lo
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=15),
     'ROTATE_REFRESH_TOKENS': True,
-    'BLACKLIST_AFTER_ROTATION': True,               # Blacklist o refresh antigo
-    'AUTH_HEADER_TYPES': ('Bearer',),
+    'BLACKLIST_AFTER_ROTATION': True,
+    'AUTH_HEADER_TYPES': ('Bearer'),
 }
 
 LOGGING = {

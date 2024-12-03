@@ -29,6 +29,7 @@ type Portfolio = {
 export default function PortfolioHome() {
   const [portfolios, setPortfolios] = useState<Portfolio[]>([]);
   const [loading, setLoading] = useState(true);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     const fetchPortfolios = async () => {
@@ -47,9 +48,14 @@ export default function PortfolioHome() {
           headers: { Authorization: `Bearer ${token}` },
         });
 
-        setPortfolios(response.data);
+        // Verifica se response.data e response.data.results existem e são arrays
+        const fetchedPortfolios = Array.isArray(response.data?.results)
+          ? response.data.results
+          : [];
+        setPortfolios(fetchedPortfolios);
       } catch (error) {
         console.error('Erro ao carregar portfólios:', error);
+        setHasError(true);
         toast({
           title: 'Erro ao carregar portfólios',
           description: 'Tente novamente mais tarde.',
@@ -80,8 +86,16 @@ export default function PortfolioHome() {
 
         {/* Conteúdo */}
         {loading ? (
-          <p className="text-zinc-400">Carregando portfólios...</p>
-        ) : portfolios.length > 0 ? (
+          <div className="flex justify-center items-center h-40">
+            <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-zinc-400"></div>
+          </div>
+        ) : hasError ? (
+          <p className="text-zinc-400">
+            Ocorreu um erro ao carregar os portfólios.
+          </p>
+        ) : portfolios.length === 0 ? (
+          <p className="text-zinc-400">Nenhum portfólio encontrado.</p>
+        ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {portfolios.map((portfolio) => (
               <Card key={portfolio.id} className="bg-zinc-800">
@@ -89,11 +103,11 @@ export default function PortfolioHome() {
                   {/* Avatar do Usuário */}
                   <Avatar className="mb-4">
                     <AvatarImage
-                      src={portfolio.user.image || ''}
+                      src={portfolio.user.image || '/default-avatar.png'}
                       alt={portfolio.user.name}
                     />
                     <AvatarFallback>
-                      {portfolio.user.name[0]?.toUpperCase()}
+                      {portfolio.user.name?.toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
                   <CardTitle className="text-lg font-bold text-zinc-200">
@@ -105,7 +119,7 @@ export default function PortfolioHome() {
                   {/* Imagem do Portfólio */}
                   <div className="mb-4 relative h-40 w-full rounded-md overflow-hidden">
                     <Image
-                      src={portfolio.image}
+                      src={portfolio.image || '/default-portfolio.png'}
                       alt={`Imagem do portfólio de ${portfolio.user.name}`}
                       layout="fill"
                       objectFit="cover"
@@ -129,8 +143,6 @@ export default function PortfolioHome() {
               </Card>
             ))}
           </div>
-        ) : (
-          <p className="text-zinc-400">Nenhum portfólio encontrado.</p>
         )}
       </div>
     </>
