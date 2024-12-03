@@ -6,6 +6,7 @@ import {
   House,
   LayoutDashboard,
   LogOut,
+  TreeDeciduous,
   User,
 } from 'lucide-react';
 import Image from 'next/image';
@@ -67,6 +68,13 @@ export default function Navbar() {
             >
               <LayoutDashboard width={18} className="text-zinc-200 mr-1" />
               Dashboard
+            </Link>
+            <Link
+              href="/arvore/"
+              className="text-zinc-200 flex items-center justify-center text-sm text-center ml-5"
+            >
+              <TreeDeciduous width={18} className="text-zinc-200 mr-1" />
+              Arvore
             </Link>
           </div>
 
