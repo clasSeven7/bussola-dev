@@ -1923,3 +1923,18 @@ Traceback (most recent call last):
 RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining DELETE data. Change your form to point to localhost:8000/api/projects/3/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
 2024-12-03 00:47:23,749 - DEBUG - STREAM b'IHDR' 16 13
 2024-12-03 00:47:23,749 - DEBUG - STREAM b'IDAT' 41 8192
+2024-12-03 02:32:26,792 - INFO - Watching for file changes with StatReloader
+2024-12-03 11:32:48,151 - INFO - Watching for file changes with StatReloader
+2024-12-03 11:33:18,102 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:33:18,146 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:33:18,153 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:33:18,202 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:33:57,849 - INFO - Watching for file changes with StatReloader
+2024-12-03 11:34:06,440 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:34:06,453 - WARNING - Unauthorized: /api/projects/
+2024-12-03 11:34:13,403 - WARNING - Not Found: /media/project/scrum.png
+2024-12-03 11:34:13,404 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 11:34:13,405 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 11:34:17,237 - WARNING - Not Found: /media/project/wallpaperflare.com_wallpaper_11.jpg
+2024-12-03 11:34:17,239 - WARNING - Not Found: /media/project/manguecapa.png
+2024-12-03 11:34:17,241 - WARNING - Not Found: /media/project/scrum.png

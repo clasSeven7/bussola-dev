@@ -3,13 +3,22 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+from decouple import config
+
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Padrão
 SECRET_KEY = os.environ.get('DB_SECRET_KEY')
 
-DEBUG = True
+# Decouple
+# SECRET_KEY = config(
+#     'DJANGO_SECRET_KEY',
+#     cast=str,
+#     default="oq27ht#!we5t-f+4uohp^h#22aw#zj5=n*&q9w&j$z6#-o"
+# )
+DEBUG = config('DJANGO_DEBUG', default=False, cast=bool)
 
 CORS_ORIGIN_ALLOW_ALL = True
 ALLOWED_HOSTS = ['*']
@@ -17,6 +26,7 @@ ALLOWED_HOSTS = ['*']
 APPS = [
     'app',
     'softdelete',
+    'custom_commands',
 ]
 
 REST = [
@@ -37,6 +47,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -76,6 +87,25 @@ DATABASES = {
     }
 }
 
+# Postgres Database docker
+
+# POSTGRES_USER = config('POSTGRES_USER', cast=str)
+# POSTGRES_PASSWORD = config('POSTGRES_PASSWORD', cast=str)
+# POSTGRES_DB = config('POSTGRES_DB', cast=str)
+
+# if all([POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB]):
+#     print('Postgres Database docker')
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': POSTGRES_DB,
+#             'USER': POSTGRES_USER,
+#             'PASSWORD': POSTGRES_PASSWORD,
+#             'HOST': 'db',
+#             'PORT': 5432,
+#         }
+#     }
+
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -99,6 +129,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

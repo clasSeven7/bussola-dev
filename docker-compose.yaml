@@ -1,0 +1,26 @@
+services:
+  backend:
+    container_name: backend_bussola_dev
+    image: python:3.12-slim
+    build:
+      context: .
+      dockerfile: apps/docker/backend/Dockerfile
+    ports:
+      - '8000:8000'
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+
+  db:
+    container_name: db_bussola_dev
+    image: postgres:15-alpine
+    ports:
+      - '5432:5432'
+    env_file:
+      - ./.env
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

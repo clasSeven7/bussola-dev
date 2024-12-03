@@ -3,18 +3,46 @@
 import Navbar from '@/components/navbar';
 import { Card, CardContent, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import React from 'react';
+import { useEffect, useState } from 'react';
+
+const projects = [
+  { name: 'Portfolio Website', difficulty: 2 },
+  { name: 'E-commerce Platform', difficulty: 4 },
+  { name: 'Social Media App', difficulty: 5 },
+];
+
+const languagesUsed = ['JavaScript', 'Python', 'C#'];
 
 const SkillTree = () => {
-  const [developerRank, setDeveloperRank] = React.useState('Iniciante');
-  const [bestLanguage, setBestLanguage] = React.useState('JavaScript');
+  const [developerRank, setDeveloperRank] = useState('Iniciante');
+  const [bestLanguage, setBestLanguage] = useState('JavaScript');
+  const [trendingLanguages, setTrendingLanguages] = useState<string[]>([]);
+
+  // Calcula o rank com base nos projetos
+  useEffect(() => {
+    const totalDifficulty = projects.reduce(
+      (sum, project) => sum + project.difficulty,
+      0
+    );
+    if (totalDifficulty >= 10) {
+      setDeveloperRank('Avançado');
+    } else if (totalDifficulty >= 5) {
+      setDeveloperRank('Intermediário');
+    } else {
+      setDeveloperRank('Iniciante');
+    }
+  }, []);
+
+  // Pesquisa linguagens em alta (simulado com dados estáticos)
+  useEffect(() => {
+    const fetchTrendingLanguages = async () => {
+      // Simular uma API que retorna as linguagens mais populares
+      const trending = ['TypeScript', 'Rust', 'Python', 'Go', 'Kotlin'];
+      setTrendingLanguages(trending);
+    };
+
+    fetchTrendingLanguages();
+  }, []);
 
   const skills = [
     { id: 1, name: 'HTML', unlocked: true },
@@ -43,39 +71,21 @@ const SkillTree = () => {
         {/* Rank de Desenvolvedor */}
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-4">Rank de Desenvolvedor:</h2>
-          <Select onValueChange={setDeveloperRank} defaultValue={developerRank}>
-            <SelectTrigger className="w-56">
-              <SelectValue placeholder="Selecione seu rank" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="Iniciante">Iniciante</SelectItem>
-              <SelectItem value="Intermediário">Intermediário</SelectItem>
-              <SelectItem value="Avançado">Avançado</SelectItem>
-            </SelectContent>
-          </Select>
-          <p className="text-zinc-400 mt-2">Rank atual: {developerRank}</p>
+          <p className="text-lg mt-2">{developerRank}</p>
         </div>
 
         {/* Melhor Linguagem Atual */}
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-4">
-            Melhor Linguagem Atual:
+            Melhores Linguagens e Frameworks Atuais:
           </h2>
-          <Select onValueChange={setBestLanguage} defaultValue={bestLanguage}>
-            <SelectTrigger className="w-56">
-              <SelectValue placeholder="Selecione sua linguagem favorita" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="JavaScript">JavaScript</SelectItem>
-              <SelectItem value="Python">Python</SelectItem>
-              <SelectItem value="Java">Java</SelectItem>
-              <SelectItem value="C#">C#</SelectItem>
-              <SelectItem value="Ruby">Ruby</SelectItem>
-            </SelectContent>
-          </Select>
-          <p className="text-zinc-400 mt-2">
-            Linguagem favorita: {bestLanguage}
-          </p>
+          <ul className="list-disc ml-6 text-zinc-300">
+            {trendingLanguages.map((lang) => (
+              <li key={lang}>
+                {lang} {languagesUsed.includes(lang) ? '(Você usa!)' : ''}
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Árvore de Habilidades */}
@@ -89,7 +99,7 @@ const SkillTree = () => {
                   : 'bg-zinc-800 text-zinc-500'
               }`}
             >
-              <CardContent>
+              <CardContent className="p-5">
                 <CardTitle>{skill.name}</CardTitle>
                 {skill.unlocked ? (
                   <p className="text-sm mt-2">Desbloqueado!</p>
