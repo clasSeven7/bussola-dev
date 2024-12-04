@@ -2756,3 +2756,132 @@ RuntimeError: You called this URL via DELETE, but the URL doesn't end in a slash
 2024-12-03 20:02:28,121 - DEBUG - Importing XbmImagePlugin
 2024-12-03 20:02:28,122 - DEBUG - Importing XpmImagePlugin
 2024-12-03 20:02:28,122 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 21:42:42,563 - INFO - Watching for file changes with StatReloader
+2024-12-03 21:43:03,483 - WARNING - Unauthorized: /api/projects/
+2024-12-03 21:43:03,555 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:09:17,548 - WARNING - Bad Request: /api/users/
+2024-12-03 22:09:26,369 - WARNING - Bad Request: /api/users/
+2024-12-03 22:11:34,156 - WARNING - Bad Request: /api/users/
+2024-12-03 22:11:41,405 - WARNING - Bad Request: /api/users/
+2024-12-03 22:17:58,698 - WARNING - Bad Request: /api/users/
+2024-12-03 22:19:17,332 - WARNING - Bad Request: /api/users/
+2024-12-03 22:19:47,094 - WARNING - Bad Request: /api/users/
+2024-12-03 22:24:07,662 - WARNING - Bad Request: /api/users/
+2024-12-03 22:39:46,549 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:39:46,549 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:39:46,549 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:39:46,549 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:39:46,550 - DEBUG - Importing BlpImagePlugin
+2024-12-03 22:39:46,551 - DEBUG - Importing BmpImagePlugin
+2024-12-03 22:39:46,551 - DEBUG - Importing BufrStubImagePlugin
+2024-12-03 22:39:46,552 - DEBUG - Importing CurImagePlugin
+2024-12-03 22:39:46,552 - DEBUG - Importing DcxImagePlugin
+2024-12-03 22:39:46,553 - DEBUG - Importing DdsImagePlugin
+2024-12-03 22:39:46,557 - DEBUG - Importing EpsImagePlugin
+2024-12-03 22:39:46,558 - DEBUG - Importing FitsImagePlugin
+2024-12-03 22:39:46,559 - DEBUG - Importing FliImagePlugin
+2024-12-03 22:39:46,559 - DEBUG - Importing FpxImagePlugin
+2024-12-03 22:39:46,560 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-12-03 22:39:46,560 - DEBUG - Importing FtexImagePlugin
+2024-12-03 22:39:46,560 - DEBUG - Importing GbrImagePlugin
+2024-12-03 22:39:46,561 - DEBUG - Importing GifImagePlugin
+2024-12-03 22:39:46,561 - DEBUG - Importing GribStubImagePlugin
+2024-12-03 22:39:46,562 - DEBUG - Importing Hdf5StubImagePlugin
+2024-12-03 22:39:46,562 - DEBUG - Importing IcnsImagePlugin
+2024-12-03 22:39:46,565 - DEBUG - Importing IcoImagePlugin
+2024-12-03 22:39:46,566 - DEBUG - Importing ImImagePlugin
+2024-12-03 22:39:46,567 - DEBUG - Importing ImtImagePlugin
+2024-12-03 22:39:46,568 - DEBUG - Importing IptcImagePlugin
+2024-12-03 22:39:46,569 - DEBUG - Importing JpegImagePlugin
+2024-12-03 22:39:46,569 - DEBUG - Importing Jpeg2KImagePlugin
+2024-12-03 22:39:46,569 - DEBUG - Importing McIdasImagePlugin
+2024-12-03 22:39:46,569 - DEBUG - Importing MicImagePlugin
+2024-12-03 22:39:46,570 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-12-03 22:39:46,570 - DEBUG - Importing MpegImagePlugin
+2024-12-03 22:39:46,570 - DEBUG - Importing MpoImagePlugin
+2024-12-03 22:39:46,575 - DEBUG - Importing MspImagePlugin
+2024-12-03 22:39:46,576 - DEBUG - Importing PalmImagePlugin
+2024-12-03 22:39:46,577 - DEBUG - Importing PcdImagePlugin
+2024-12-03 22:39:46,578 - DEBUG - Importing PcxImagePlugin
+2024-12-03 22:39:46,578 - DEBUG - Importing PdfImagePlugin
+2024-12-03 22:39:46,586 - DEBUG - Importing PixarImagePlugin
+2024-12-03 22:39:46,586 - DEBUG - Importing PngImagePlugin
+2024-12-03 22:39:46,587 - DEBUG - Importing PpmImagePlugin
+2024-12-03 22:39:46,587 - DEBUG - Importing PsdImagePlugin
+2024-12-03 22:39:46,587 - DEBUG - Importing QoiImagePlugin
+2024-12-03 22:39:46,588 - DEBUG - Importing SgiImagePlugin
+2024-12-03 22:39:46,588 - DEBUG - Importing SpiderImagePlugin
+2024-12-03 22:39:46,589 - DEBUG - Importing SunImagePlugin
+2024-12-03 22:39:46,589 - DEBUG - Importing TgaImagePlugin
+2024-12-03 22:39:46,589 - DEBUG - Importing TiffImagePlugin
+2024-12-03 22:39:46,590 - DEBUG - Importing WebPImagePlugin
+2024-12-03 22:39:46,592 - DEBUG - Importing WmfImagePlugin
+2024-12-03 22:39:46,593 - DEBUG - Importing XbmImagePlugin
+2024-12-03 22:39:46,594 - DEBUG - Importing XpmImagePlugin
+2024-12-03 22:39:46,594 - DEBUG - Importing XVThumbImagePlugin
+2024-12-03 22:40:02,405 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:40:02,405 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:40:02,405 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:40:02,405 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:40:39,928 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:41:13,046 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:41:13,047 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:41:13,047 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:41:13,047 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:41:13,055 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:41:21,172 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:41:21,173 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:41:21,173 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:41:21,173 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:41:21,190 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:43:40,126 - WARNING - Unauthorized: /api/users/
+2024-12-03 22:43:40,128 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:43:50,433 - WARNING - Unauthorized: /api/users/
+2024-12-03 22:43:50,437 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:01,833 - WARNING - Unauthorized: /api/users/
+2024-12-03 22:44:01,837 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:32,331 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:32,346 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:32,362 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:32,412 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:40,383 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:40,396 - WARNING - Unauthorized: /api/projects/
+2024-12-03 22:44:57,080 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:44:57,080 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:44:57,080 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:44:57,080 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:44:57,086 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:45:16,071 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:45:16,071 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:45:16,072 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:45:16,072 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:45:16,078 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:46:14,459 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:46:14,459 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:46:14,459 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:46:14,460 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:46:14,480 - WARNING - Bad Request: /api/portfolios/
+2024-12-03 22:46:58,533 - WARNING - Not Found: /favicon.ico
+2024-12-03 22:47:26,377 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:47:26,377 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:47:26,377 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:47:26,377 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 22:47:54,144 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 22:47:54,144 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 22:47:54,144 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 22:47:54,144 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 23:00:09,993 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 23:00:09,994 - DEBUG - STREAM b'pHYs' 41 9
+2024-12-03 23:00:09,994 - DEBUG - STREAM b'iTXt' 62 1187
+2024-12-03 23:00:09,994 - DEBUG - STREAM b'IDAT' 1261 317322
+2024-12-03 23:02:58,087 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 23:02:58,087 - DEBUG - STREAM b'sRGB' 41 1
+2024-12-03 23:02:58,087 - DEBUG - STREAM b'gAMA' 54 4
+2024-12-03 23:02:58,087 - DEBUG - STREAM b'pHYs' 70 9
+2024-12-03 23:02:58,087 - DEBUG - STREAM b'IDAT' 91 65445
+2024-12-03 23:05:26,440 - WARNING - Unauthorized: /api/projects/
+2024-12-03 23:06:29,943 - DEBUG - STREAM b'IHDR' 16 13
+2024-12-03 23:06:29,943 - DEBUG - STREAM b'sRGB' 41 1
+2024-12-03 23:06:29,943 - DEBUG - STREAM b'gAMA' 54 4
+2024-12-03 23:06:29,944 - DEBUG - STREAM b'pHYs' 70 9
+2024-12-03 23:06:29,944 - DEBUG - STREAM b'IDAT' 91 65445

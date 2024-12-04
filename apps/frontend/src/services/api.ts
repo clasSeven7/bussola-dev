@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api', // URL da API
+  baseURL: process.env.NEXT_PUBLIC_API_URL, // URL da API
   // baseURL: '0.0.0.0:8000/api', // docker
   headers: {
     'Content-Type': 'application/json',

@@ -1,9 +1,7 @@
 'use client';
 
 import Navbar from '@/components/navbar';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { toast } from '@/hooks/use-toast';
 import api from '@/services/api';
 import { CirclePlus } from 'lucide-react';
@@ -22,11 +20,11 @@ type Portfolio = {
   projects: {
     id: string;
     title: string;
-    technologies: string[];
+    technologies: string[]; // Garante que é um array de strings
   }[];
 };
 
-export default function PortfolioHome() {
+export default function Portfolios() {
   const [portfolios, setPortfolios] = useState<Portfolio[]>([]);
   const [loading, setLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
@@ -48,11 +46,11 @@ export default function PortfolioHome() {
           headers: { Authorization: `Bearer ${token}` },
         });
 
-        // Verifica se response.data e response.data.results existem e são arrays
         const fetchedPortfolios = Array.isArray(response.data?.results)
           ? response.data.results
           : [];
         setPortfolios(fetchedPortfolios);
+        console.log('Portfólios carregados:', fetchedPortfolios);
       } catch (error) {
         console.error('Erro ao carregar portfólios:', error);
         setHasError(true);
@@ -98,49 +96,60 @@ export default function PortfolioHome() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {portfolios.map((portfolio) => (
-              <Card key={portfolio.id} className="bg-zinc-800">
-                <CardHeader className="flex flex-col items-center">
-                  {/* Avatar do Usuário */}
-                  <Avatar className="mb-4">
-                    <AvatarImage
-                      src={portfolio.user.image || '/default-avatar.png'}
-                      alt={portfolio.user.name}
-                    />
-                    <AvatarFallback>
-                      {portfolio.user.name?.toUpperCase()}
-                    </AvatarFallback>
-                  </Avatar>
-                  <CardTitle className="text-lg font-bold text-zinc-200">
-                    {portfolio.user.name}
-                  </CardTitle>
-                </CardHeader>
-
-                <CardContent>
-                  {/* Imagem do Portfólio */}
-                  <div className="mb-4 relative h-40 w-full rounded-md overflow-hidden">
+              <div
+                key={portfolio.id || portfolio.user.id} // chave única
+                className="bg-zinc-800 p-6 rounded-lg shadow-md"
+              >
+                {/* Avatar do Usuário */}
+                <div className="flex flex-col items-center mb-6">
+                  <div className="relative mb-4">
                     <Image
-                      src={portfolio.image || '/default-portfolio.png'}
-                      alt={`Imagem do portfólio de ${portfolio.user.name}`}
-                      layout="fill"
-                      objectFit="cover"
+                      src={portfolio.user?.image || '/default-avatar.png'}
+                      alt={portfolio.user?.name || 'Avatar do Usuário'}
+                      width={80}
+                      height={80}
+                      className="rounded-full object-cover"
                     />
                   </div>
+                  <h2 className="text-lg font-semibold text-zinc-200">
+                    {portfolio.user?.name || 'Nome do Usuário'}
+                  </h2>
+                </div>
 
-                  {/* Projetos */}
-                  <h3 className="text-md font-semibold text-zinc-300 mb-2">
-                    Projetos:
-                  </h3>
-                  <ul className="text-sm text-zinc-400 space-y-1">
-                    {portfolio.projects.length > 0 ? (
-                      portfolio.projects.map((project) => (
-                        <li key={project.id}>{project.title}</li>
-                      ))
-                    ) : (
-                      <p>Nenhum projeto adicionado.</p>
-                    )}
-                  </ul>
-                </CardContent>
-              </Card>
+                {/* Imagem do Portfólio */}
+                <div className="mb-4 relative h-40 w-full rounded-md overflow-hidden">
+                  <Image
+                    src={portfolio.image || '/default-portfolio.png'}
+                    alt={`Imagem do portfólio de ${portfolio.user?.name}`}
+                    width={300}
+                    height={200}
+                    objectFit="cover"
+                  />
+                </div>
+
+                {/* Projetos */}
+                <h3 className="text-md font-semibold text-zinc-300 mb-2">
+                  Projetos:
+                </h3>
+                <ul className="text-sm text-zinc-400 space-y-1">
+                  {Array.isArray(portfolio.projects) &&
+                  portfolio.projects.length > 0 ? (
+                    portfolio.projects.map((project) => (
+                      <li key={project.id} className="mb-2">
+                        <strong>{project.title}</strong>
+                        <div className="text-xs text-zinc-500 mt-1">
+                          {Array.isArray(project.technologies) &&
+                          project.technologies.length
+                            ? project.technologies.join(', ')
+                            : 'Tecnologias não disponíveis'}
+                        </div>
+                      </li>
+                    ))
+                  ) : (
+                    <p className="text-zinc-500">Nenhum projeto adicionado.</p>
+                  )}
+                </ul>
+              </div>
             ))}
           </div>
         )}
